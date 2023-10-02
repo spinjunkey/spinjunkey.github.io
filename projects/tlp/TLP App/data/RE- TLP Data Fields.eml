@@ -1,0 +1,726 @@
+Received: from orsmsx160.amr.corp.intel.com (10.22.226.43) by
+ fmsmsx116.amr.corp.intel.com (10.18.116.20) with Microsoft SMTP Server (TLS)
+ id 14.3.319.2; Tue, 28 Nov 2017 09:50:25 -0800
+Received: from orsmsx111.amr.corp.intel.com ([169.254.12.135]) by
+ ORSMSX160.amr.corp.intel.com ([169.254.13.61]) with mapi id 14.03.0319.002;
+ Tue, 28 Nov 2017 09:50:24 -0800
+From: "Wadiwalla, Anahita K" <anahita.k.wadiwalla@intel.com>
+To: "Shaw, David" <david.shaw@intel.com>
+CC: "Wadiwalla, Anahita K" <anahita.k.wadiwalla@intel.com>
+Subject: RE: TLP Data Fields
+Thread-Topic: TLP Data Fields
+Thread-Index: AdNoalLPpvVpDA8cRhGvylLu2wJpAgABsq3w
+Date: Tue, 28 Nov 2017 09:50:23 -0800
+Message-ID: <5291290D1C7B7041A79CCD4E9EC062017117D1D0@ORSMSX111.amr.corp.intel.com>
+References: <6D7A88A053452442A2F1AB7B050881CA7617BD7D@fmsmsx115.amr.corp.intel.com>
+In-Reply-To: <6D7A88A053452442A2F1AB7B050881CA7617BD7D@fmsmsx115.amr.corp.intel.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: <5291290D1C7B7041A79CCD4E9EC062017117D1D0@ORSMSX111.amr.corp.intel.com>
+x-ctpclassification: CTP_IC
+x-titus-metadata-40: eyJDYXRlZ29yeUxhYmVscyI6IiIsIk1ldGFkYXRhIjp7Im5zIjoiaHR0cDpcL1wvd3d3LnRpdHVzLmNvbVwvbnNcL0ludGVsMyIsImlkIjoiNjE2MTVhMDQtNzhmYy00M2M3LTk3ZWUtODcwYzc3YThjZmNhIiwicHJvcHMiOlt7Im4iOiJDVFBDbGFzc2lmaWNhdGlvbiIsInZhbHMiOlt7InZhbHVlIjoiQ1RQX0lDIn1dfV19LCJTdWJqZWN0TGFiZWxzIjpbXSwiVE1DVmVyc2lvbiI6IjE2LjUuOS4zIiwiVHJ1c3RlZExhYmVsSGFzaCI6IlhReEpzV0s4eWRLTDRTNFhmQ0x4VWhGME5QWWI2N2JvTUZMbGtMXC9oYktzPSJ9
+dlp-product: dlpe-windows
+dlp-version: 11.0.0.116
+dlp-reaction: no-action
+MIME-Version: 1.0
+X-MS-Exchange-Organization-AuthSource: ORSMSX160.amr.corp.intel.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-Originating-IP: [10.22.254.139]
+X-MS-Exchange-Organization-AVStamp-Mailbox: NAI;59095076;0;novirus
+Return-Path: anahita.k.wadiwalla@intel.com
+Content-type: multipart/alternative;
+	boundary="B_3595484730_2027399647"
+
+> This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--B_3595484730_2027399647
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+Hi David,
+
+=20
+
+The Input columns are accurate.
+
+=20
+
+This is the full format of the report/ database we need, from whatever tool=
+ you are developing, to enable the reporting of TLD success indicators.
+
+=20
+
+Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto =
+Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Auto Drop Down User Input =
+Drop Down (1/0) Drop Down (1/0) Drop Down (1/0/NA) Drop Down (1/0) Drop Down=
+ Input (1/0) Drop Down =20
+WWID Employee Name Diverse URM Gender Grade Job Code Job Code Description T=
+ech/ Non Tech Org Mgr Org Unit Org Unit Descr Org Lvl4 Org Lvl4 Descr Org Lv=
+l5 Org Lvl5 Descr Org Lvl6 Org Lvl6 Descr Manager Name Manager WWID Home Cou=
+ntry Site Time in Grade Time in Job Length of Service Job Code Type Current =
+TLP Title Area of Expertise Written IDP IDP reviewed by Mgr IDP Reviewed by =
+staff TL Pipe/PEP TL/PEP Year PE+ Bench PE (+) Year Count=20
+
+=20
+
+Thanks,
+
+Anahita K. Wadiwalla=20
+
+Business Operations Manager
+
+DEG Platform HW Engineering Division (PHED)
+
+Contact: 503-712-9144
+
+
+=20
+
+From: Shaw, David=20
+Sent: Tuesday, November 28, 2017 9:04 AM
+To: Wadiwalla, Anahita K <anahita.k.wadiwalla@intel.com>
+Cc: Shaw, David <david.shaw@intel.com>
+Subject: TLP Data Fields
+
+=20
+
+Hi Anahita=E2=80=A6 I am working with Vikki Espinosa trying to scope out what it =
+would cost to bring the TLP Process into its own online app. She gave me a l=
+ist of fields that you capture data in this process, and wanted to confirm t=
+hat this is  the latest. Could you look at the attached image and let me kno=
+w if any of the fields in the red bracket have changed, or all is good to go=
+?
+
+=20
+
+Thanks in advance!
+
+David
+
+=20
+
+=20
+
+E mahalo kakou I ka mea loa=E2=80=99a
+
+=20
+
+
+--B_3595484730_2027399647
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsof=
+t-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" xmlns:x=
+=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schemas.microsoft.=
+com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Intel Clear";
+	panose-1:2 11 6 4 2 2 3 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Intel Clear",sans-serif;
+	color:#44546A;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><a name=3D"_MailEndCompose"><span style=3D"font-size:12.0p=
+t;font-family:&quot;Intel Clear&quot;,sans-serif;color:#44546A">Hi David,<o:=
+p></o:p></span></a></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A">The Input columns are accurate.<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A">This is the full format of the report/=
+ database we need, from whatever tool you are developing, to enable the repo=
+rting of TLD success indicators.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"0" style=3D"width:467.5pt;margin-left:-.15pt;border-collapse:collapse">
+<tbody>
+<tr style=3D"height:15.0pt">
+<td width=3D"55" nowrap=3D"" valign=3D"bottom" style=3D"width:8.25pt;border:solid w=
+indowtext 1.0pt;background:#44546A;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"76" nowrap=3D"" valign=3D"bottom" style=3D"width:20.95pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:6.9pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"45" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:9.2pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"52" nowrap=3D"" valign=3D"bottom" style=3D"width:6.05pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"46" nowrap=3D"" valign=3D"bottom" style=3D"width:8.15pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"85" nowrap=3D"" valign=3D"bottom" style=3D"width:18.15pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"49" nowrap=3D"" valign=3D"bottom" style=3D"width:12.65pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:9.5pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.55pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:20.4pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:12.8pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:27.55pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:28.15pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:25.9pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:12.65pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"63" nowrap=3D"" valign=3D"bottom" style=3D"width:11.75pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:10.1pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"52" nowrap=3D"" valign=3D"bottom" style=3D"width:11.15pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"45" nowrap=3D"" valign=3D"bottom" style=3D"width:9.5pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"59" nowrap=3D"" valign=3D"bottom" style=3D"width:13.55pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"46" nowrap=3D"" valign=3D"bottom" style=3D"width:12.35pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Auto<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:15.3pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down<o:p></o:p></spa=
+n></b></p>
+</td>
+<td width=3D"72" nowrap=3D"" valign=3D"bottom" style=3D"width:15.9pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">User Input<o:p></o:p></sp=
+an></b></p>
+</td>
+<td width=3D"63" nowrap=3D"" valign=3D"bottom" style=3D"width:13.25pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down (1/0)<o:p></o:p=
+></span></b></p>
+</td>
+<td width=3D"73" nowrap=3D"" valign=3D"bottom" style=3D"width:18.6pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down (1/0)<o:p></o:p=
+></span></b></p>
+</td>
+<td width=3D"76" nowrap=3D"" valign=3D"bottom" style=3D"width:19.2pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down (1/0/NA)<o:p></=
+o:p></span></b></p>
+</td>
+<td width=3D"73" nowrap=3D"" valign=3D"bottom" style=3D"width:13.1pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down (1/0)<o:p></o:p=
+></span></b></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:11.45pt;border:solid =
+windowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5=
+.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down<o:p></o:p></spa=
+n></b></p>
+</td>
+<td width=3D"53" nowrap=3D"" valign=3D"bottom" style=3D"width:9.8pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Input (1/0)<o:p></o:p></s=
+pan></b></p>
+</td>
+<td width=3D"50" nowrap=3D"" valign=3D"bottom" style=3D"width:9.95pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Drop Down<o:p></o:p></spa=
+n></b></p>
+</td>
+<td width=3D"51" nowrap=3D"" valign=3D"bottom" style=3D"width:8.15pt;border:solid w=
+indowtext 1.0pt;border-left:none;background:#44546A;padding:0in 5.4pt 0in 5.=
+4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">&nbsp;<o:p></o:p></span><=
+/b></p>
+</td>
+</tr>
+<tr style=3D"height:15.0pt">
+<td width=3D"55" nowrap=3D"" valign=3D"bottom" style=3D"width:8.25pt;border:solid w=
+indowtext 1.0pt;border-top:none;background:#222B35;padding:0in 5.4pt 0in 5.4=
+pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">WWID<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"76" nowrap=3D"" valign=3D"bottom" style=3D"width:20.95pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Employee Name<o:p></o:p><=
+/span></b></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:6.9pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Diverse<o:p></o:p></span>=
+</b></p>
+</td>
+<td width=3D"45" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">URM<o:p></o:p></span></b>=
+</p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:9.2pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Gender<o:p></o:p></span><=
+/b></p>
+</td>
+<td width=3D"52" nowrap=3D"" valign=3D"bottom" style=3D"width:6.05pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Grade<o:p></o:p></span></=
+b></p>
+</td>
+<td width=3D"46" nowrap=3D"" valign=3D"bottom" style=3D"width:8.15pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Job Code<o:p></o:p></span=
+></b></p>
+</td>
+<td width=3D"85" nowrap=3D"" valign=3D"bottom" style=3D"width:18.15pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Job Code Description<o:p>=
+</o:p></span></b></p>
+</td>
+<td width=3D"49" nowrap=3D"" valign=3D"bottom" style=3D"width:12.65pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Tech/ Non Tech<o:p></o:p>=
+</span></b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:9.5pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Mgr<o:p></o:p></span>=
+</b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.55pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Unit<o:p></o:p></span=
+></b></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:20.4pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Unit Descr<o:p></o:p>=
+</span></b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl4<o:p></o:p></span=
+></b></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:12.8pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl4 Descr<o:p></o:p>=
+</span></b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl5<o:p></o:p></span=
+></b></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:27.55pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl5 Descr<o:p></o:p>=
+</span></b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:7.4pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl6<o:p></o:p></span=
+></b></p>
+</td>
+<td width=3D"48" nowrap=3D"" valign=3D"bottom" style=3D"width:28.15pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Org Lvl6 Descr<o:p></o:p>=
+</span></b></p>
+</td>
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:25.9pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Manager Name<o:p></o:p></=
+span></b></p>
+</td>
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:12.65pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Manager WWID<o:p></o:p></=
+span></b></p>
+</td>
+<td width=3D"63" nowrap=3D"" valign=3D"bottom" style=3D"width:11.75pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Home Country<o:p></o:p></=
+span></b></p>
+</td>
+<td width=3D"44" nowrap=3D"" valign=3D"bottom" style=3D"width:10.1pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Site<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"52" nowrap=3D"" valign=3D"bottom" style=3D"width:11.15pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Time in Grade<o:p></o:p><=
+/span></b></p>
+</td>
+<td width=3D"45" nowrap=3D"" valign=3D"bottom" style=3D"width:9.5pt;border-top:none=
+;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid wi=
+ndowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0pt"=
+>
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Time in Job<o:p></o:p></s=
+pan></b></p>
+</td>
+<td width=3D"59" nowrap=3D"" valign=3D"bottom" style=3D"width:13.55pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Length of Service<o:p></o=
+:p></span></b></p>
+</td>
+<td width=3D"46" nowrap=3D"" valign=3D"bottom" style=3D"width:12.35pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#222B35;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:white">Job Code Type<o:p></o:p><=
+/span></b></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:15.3pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Current TLP Title<o:p></o=
+:p></span></b></p>
+</td>
+<td width=3D"72" nowrap=3D"" valign=3D"bottom" style=3D"width:15.9pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Area of Expertise<o:p></o=
+:p></span></b></p>
+</td>
+<td width=3D"63" nowrap=3D"" valign=3D"bottom" style=3D"width:13.25pt;border-top:no=
+ne;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid =
+windowtext 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0p=
+t">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Written IDP<o:p></o:p></s=
+pan></b></p>
+</td>
+<td width=3D"73" nowrap=3D"" valign=3D"bottom" style=3D"width:18.6pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">IDP reviewed by Mgr<o:p><=
+/o:p></span></b></p>
+</td>
+<td width=3D"76" nowrap=3D"" valign=3D"bottom" style=3D"width:19.2pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt=
+">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">IDP Reviewed by staff<o:p=
+></o:p></span></b></p>
+</td>
+<td width=3D"73" nowrap=3D"" valign=3D"bottom" style=3D"width:13.1pt;border-top:non=
+e;border-left:none;border-bottom:solid #333F4F 1.0pt;border-right:solid #333=
+F4F 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">TL Pipe/PEP<o:p></o:p></span></b></p>
+</td>
+<td width=3D"61" nowrap=3D"" valign=3D"bottom" style=3D"width:11.45pt;border-top:no=
+ne;border-left:none;border-bottom:solid #333F4F 1.0pt;border-right:solid #33=
+3F4F 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">TL/PEP Year<o:p></o:p></span></b></p>
+</td>
+<td width=3D"53" nowrap=3D"" valign=3D"bottom" style=3D"width:9.8pt;border-top:none=
+;border-left:none;border-bottom:solid #333F4F 1.0pt;border-right:solid #333F=
+4F 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">PE&#43; Bench<o:p></o:p></span></b></p>
+</td>
+<td width=3D"50" nowrap=3D"" valign=3D"bottom" style=3D"width:9.95pt;border-top:non=
+e;border-left:none;border-bottom:solid #333F4F 1.0pt;border-right:solid #333=
+F4F 1.0pt;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">PE (&#43;) Year<o:p></o:p></span></b></p>
+</td>
+<td width=3D"51" nowrap=3D"" valign=3D"bottom" style=3D"width:8.15pt;border-top:non=
+e;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid w=
+indowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Count<o:p></o:p></span></=
+b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A">Thanks,<o:p></o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Intel Clear&quot;,sa=
+ns-serif;color:#44546A">Anahita K. Wadiwalla</span></b><span style=3D"font-fam=
+ily:&quot;Intel Clear&quot;,sans-serif;color:#44546A">
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Intel Clear&quot;,sans-=
+serif;color:#44546A">Business Operations Manager<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Intel Clear&quot;,sans-=
+serif;color:#44546A">DEG Platform HW Engineering Division (PHED)<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Intel Clear&quot;,sans-=
+serif;color:#44546A">Contact: 503-712-9144<br>
+<br>
+</span><span style=3D"font-family:&quot;Intel Clear&quot;,sans-serif;color:#4=
+4546A"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Intel =
+Clear&quot;,sans-serif;color:#44546A"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0i=
+n 0in">
+<p class=3D"MsoNormal"><a name=3D"_____replyseparator"></a><b>From:</b> Shaw, D=
+avid <br>
+<b>Sent:</b> Tuesday, November 28, 2017 9:04 AM<br>
+<b>To:</b> Wadiwalla, Anahita K &lt;anahita.k.wadiwalla@intel.com&gt;<br>
+<b>Cc:</b> Shaw, David &lt;david.shaw@intel.com&gt;<br>
+<b>Subject:</b> TLP Data Fields<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hi Anahita=E2=80=A6 I am working with Vikki Espinosa trying =
+to scope out what it would cost to bring the TLP Process into its own online=
+ app. She gave me a list of fields that you capture data in this process, an=
+d wanted to confirm that this is
+ the latest. Could you look at the attached image and let me know if any of=
+ the fields in the red bracket have changed, or all is good to go?<o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks in advance!<o:p></o:p></p>
+<p class=3D"MsoNormal">David<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0i=
+n 1.0pt 0in">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<p class=3D"MsoNormal">E mahalo kakou I ka mea loa=E2=80=99a<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+
+--B_3595484730_2027399647--
+
