@@ -1,0 +1,35 @@
+domainObj = {
+    "technical_domains": [
+        { "domain":"Assembly, Test and Productization", "subdomain":[ "Package Technology", "Assembly Technology", "Test Technology (Sort + Prod)","Product Debug","Product Test/Manufacturing","Product Validation","System Integration" ] },
+        { "domain":"Business and Vertical Technologies", "subdomain":[ "Decision Support Systems", "IP Enforcement", "Clinical Health" ] },
+        { "domain":"Connectivity and Networking", "subdomain":[ "RF Front End and Convergence", "Wireless Standards and Infrastructure", "Radio and Modem technology","Fabric Architecture","Optical" ] },
+        { "domain":"Disruptive Computing Technologies", "subdomain":[ "Neuromorphic Computing", "Quantum Computing" ] },
+        { "domain":"Fab and Process Technology", "subdomain":[ "Lithography", "Interconnect", "Transistor Design","Thin Films","Process Integration","Yield Analysis","Memory and NVM","Emerging Devices","Factory Automation","Q&R"] },
+        { "domain":"Intelligent Systems", "subdomain":[  "Autonomous Driving", "Cognitive Computing", "Compute Vision and Algorithms","Machine Learning","Multi-modal Sensing & Sensemaking","Speech and Language","Robotics and Drones","Ubiquitous / Affective Computing" ] },
+        { "domain":"Security, Privacy and Safety", "subdomain":[  "Security Architecture", "Encryption", "Block Chain & Distributed Ledger","Trusted Platforms","Functional Safety" ] },
+        { "domain":"SoC and IP Architecture and Design", "subdomain":[  "x86 Microarchitecture", "x86 Instruction Set Architecture", "non-x86 Microarchitecture / ISA","Server SoC","Client SoC","IoT","Storage","Networking","I/O","High Speed IO / SERDES","FPGA","Logic and Physical Design","Circuits and Low Power","Graphics","Media Processing", "Computer Vision IP" ] },
+        { "domain":"Software", "subdomain":[  "Pre-Boot env/BIOS/Firmware", "OS / VMM", "Compilers, Tools","Algorithms","HPC / Parallel Computing / Distributed Systems","Electronic Design Automation" ] },
+        { "domain":"Systems Architecture and Integration", "subdomain":[  "Server Systems", "HPC Systems", "Storage Systems","Network and Comms Systems","PC Systems","Phone Systems","IoT and Emerging Systems","Cloud Computing Systems","Visual Computing Systems","FPGA Systems","Power Management Systems", "RF Platform Technologies" ] },
+        { "domain":"Social, Behavioral & Ecosystem Sciences", "subdomain":[  "Socio-technical Systems", "User Experience", "Ecosystems & Market Action","Data Analytics & Modeling" ] }
+    ]
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
