@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>WebGL Data Visualization</title>
+
+     <style>
+         body { margin: 0; }
+         canvas { display: block; }
+     </style>
+
+     <script src="https://unpkg.com/3d-force-graph"></script>
+ </head>
+
+ <body>
+     <div id="3d-graph"></div>
+
+     <script type="importmap">{ "imports": { "three": "https://unpkg.com/three/build/three.module.js" }}</script>
+     <script type="module">
+         import { UnrealBloomPass } from 'https://unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js'
+
+         const Graph = ForceGraph3D()
+         (document.getElementById('3d-graph'))
+             .backgroundColor('#000003')
+             .jsonUrl('https://raw.githubusercontent.com/vasturiano/3d-force-graph/master/example/datasets/miserables.json')
+             .nodeLabel('id')
+             .enableNodeDrag(false)
+//             //.nodeAutoColorBy('group')
+
+         // Add glow effect with three.js postprocessing
+         const bloomPass = new UnrealBloomPass()
+         bloomPass.strength = 1
+         bloomPass.radius = 0.8
+        
+         Graph.postProcessingComposer().addPass(bloomPass)
+
+         // camera orbit
+         let angle = 0
+         const distance = 700
+     </script>
+ </body>
+
+ </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Canvas Scatterplot</title>
+</head>
+<body>
+    <!-- Create the HTML canvas element -->
+    <canvas id="scatterplot" width="1000" height="700"></canvas>
+
+    <script>
+        // Grab the canvas
+        const canvas = document.getElementById('scatterplot');
+        canvas.style.backgroundColor = '#004563';
+
+        // Apply the '2d' context (as opposed to 'webgl')
+        const ctx = canvas.getContext('2d');
+
+        // Define the visualization's attributes
+        let numberOfPoints = 500;
+        let sizeOfPoints = 10;
+        let pointColor = 'white';
+
+        // Clear the canvas (in case any points have already been drawn)
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Use a for loop to draw all the points
+        for (let i = 0; i < numberOfPoints; i++) {
+            let x = Math.random() * canvas.width;
+            let y = Math.random() * canvas.height;
+
+            ctx.beginPath();
+            ctx.arc(x, y, sizeOfPoints / 2, 0, 2 * Math.PI); //x-center, y-center, radius, start angle, end angle
+            ctx.fillStyle = pointColor;
+            ctx.fill();
+            ctx.closePath(); // close the circle
+        }
+
+    </script>
+</body>
+</html>
+
