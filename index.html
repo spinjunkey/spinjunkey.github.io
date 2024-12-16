@@ -31,6 +31,13 @@
   --heading-2-size-value: 2.8;
 }
 
+@media screen and (min-width: 768px ), screen and (max-width: calc (1944px - 1px)) and (orientation: landscape){
+  h2 {
+    font-size: calc((var(--heading-2-size-value) - 1) * 1.2vw + 1rem) ;
+  }
+}
+
+
 
   body {
     margin: 0;
