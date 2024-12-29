@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>David Shaw - Creative Leader - I help people make sense of the world.</title>
+  <meta name="description" content="David Shaw's design and development portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, nike, intel, thrustmaster, pacwest, hanna andersson">
+  <meta name="author" content="David Shaw">
+  <meta property="og:image" content="https://www.davidianshaw.com/assets/img/og_image.png" />
+
+
+  <!-- Favicons -->
+  <link href="assets/img/cropped-avatar-32x32.png" rel="icon">
+  <link href="assets/img/cropped-avatar-180x180.png" rel="apple-touch-icon">
+  <link rel="apple-touch-icon-precomposed" href="assets/img/cropped-avatar-180x180.png" />
+  <link rel="shortcut icon" href="assets/img/cropped-avatar-32x32.png" />
+  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png" />
+  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.1.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
+
+    #modal {
+      position: absolute;
+      background: url(tint20.png) 0 0 repeat;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      padding: 8px;
+    }
+
+    #content {
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+    }
+
+    #close {
+      position: absolute;
+      background: url('assets/img/close.png') 0 0 no-repeat;
+      width: 24px;
+      height: 27px;
+      display: block;
+      text-indent: -9999px;
+      top: -7px;
+      right: -7px;
+    }
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    var modal = (function () {
+      var
+        method = {},
+        $overlay,
+        $modal,
+        $content,
+        $close;
+
+      // Center the modal in the viewport
+      method.center = function () {
+        var top, left;
+
+        top = Math.max($(window).height() - $modal.outerHeight(), 0) / 2;
+        left = Math.max($(window).width() - $modal.outerWidth(), 0) / 2;
+
+        $modal.css({
+          top: top + $(window).scrollTop(),
+          left: left + $(window).scrollLeft()
+        });
+      };
+
+      // Open the modal
+      method.open = function (settings) {
+        $content.empty().append(settings.content);
+
+        $modal.css({
+          width: settings.width || 'auto',
+          height: settings.height || 'auto'
+        });
+
+        method.center();
+        $(window).bind('resize.modal', method.center);
+        $modal.show();
+        $overlay.show();
+      };
+
+      // Close the modal
+      method.close = function () {
+        $modal.hide();
+        $overlay.hide();
+        $content.empty();
+        $(window).unbind('resize.modal');
+      };
+
+      // Generate the HTML and add it to the document
+      $overlay = $('<div id="overlay"></div>');
+      $modal = $('<div id="modal"></div>');
+      $content = $('<div id="content"></div>');
+      $close = $('<a id="close" href="#">close</a>');
+
+      $modal.hide();
+      $overlay.hide();
+      $modal.append($content, $close);
+
+      $(document).ready(function () {
+        $('body').append($overlay, $modal);
+      });
+
+      $close.click(function (e) {
+        e.preventDefault();
+        method.close();
+      });
+
+      return method;
+    }());
+
+    // Wait until the DOM has loaded before querying the document
+    $(document).ready(function () {
+      $('a#howdy').click(function (e) {
+        modal.open({ content: "<img src='assets/img/fabio.JPG' />" });
+        e.preventDefault();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <main id="main">
+
+    <!-- =======  Section  ======= -->
+  
+    <section class="section">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          <h4 class="open-sans-title">
+            <span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Hi, my name is David.<br /> I make ideas real.</span></h4>
+          <!-- h4>A Polymath: Creative Leader | Catalyst | Communicator</h4 -->
+          <p>&nbsp;</p>
+          
+          <h3 class="open-sans-title" style="font-size: 2rem; padding-bottom: 20px;">The short version (aka the boring corporate bio) </h3>
+          <div class="row">
+		        <div class="col-12 col-sm-6 col-md-6">
+					<p><span class="" style="color: #903;float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px;">I </span>'m a hands-on Creative Leader with 20+ years of experience as an Interaction Designer, Visual Designer, Creative Producer, and Innovation Lead. Interested in complex issues at the intersection of Design, Business, and Technology. Left-brain and right-brain thinker. Experience coaching and mentoring junior team members. Business acumen spans multiple units including R8D, Product, IT, and HR I have a strong belief in the power of play for kids and adults alike.</p>
+          		</div>
+		  		<div class="col-12 col-sm-6 col-md-6">
+					<ul style="list-style-type: '+ '";>
+						<li>Strategic Communication & Storytelling</li>
+						<li>Experience Strategy & Design</li>
+						<li>Creative Facilitation & Leadership</li>
+						<li>Innovation Leadership</li>
+						<li>Program and Project Management</li>
+					</ul>
+          		</div>
+            <p>Fun fact: I met <a id='howdy' href='#'>Fabio</a>.</p>
+				<p>&nbsp;</p>
+          </div>
+            
+          <h3 class="open-sans-title" style="font-size: 2rem; padding-bottom: 20px;">The long version - colloquial <i>stylee</i></h3>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+		  	<p><span class="" style="color: #903;float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px;">A</span>s a generalist, no, scratch that, as a <strong><a href="https://www.bbc.com/worklife/article/20191118-what-shapes-a-polymath---and-do-we-need-them-more-than-ever" target="_blank">Polymath</a></strong> &mdash; an individual whose deep knowledge spans multiple subjects &mdash; I use complex bodies of knowledge to solve problems by way of connections outside the "proverbial" box.</p>	
+		  	<p style="padding-top: 10px;">Contrary to what the status quo believes, being a generalist makes a tremendous impact, especially in this modern complex era. Don't believe me? Read <a href="https://www.forbes.com/sites/forbesbusinesscouncil/2021/06/03/the-value-of-being-a-generalist/?sh=151897002fc8" target="_blank">this</a>. And <a href="https://hbr.org/2018/07/when-generalists-are-better-than-specialists-and-vice-versa" target="_blank">this</a>. And <a href="https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/generalists-vs-specialists/" target="_blank">this</a>. Maybe even <a href="https://hbr.org/2020/09/in-rd-generalists-are-more-valuable-than-you-think" target="_blank">this</a>.</p>
+			<p>While I have changed the domains of my career often, the core of what I do remains the same. I repeatedly act as a change agent. I'm brought in to be a catalyst for change or just the spark for change. Whether or not the team knew it.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+			<p>One way I accomplish this is by constantly adding to my toolbox (yep, a shiny example of being a lifelong learner). See below for those tools in the Craftsman box. While the tools change depending on the problem I am solving, there are a few themes that stay the same: communicator, creative leader, problem-solver, and connector. See the <a href="">case studies</a> to see how it comes together.</p>
+			<p>Contrary to what the status quo believes, being a generalist makes a tremendous impact, especially in this modern complex era. Don't believe me? Read <a href="https://www.forbes.com/sites/forbesbusinesscouncil/2021/06/03/the-value-of-being-a-generalist/?sh=151897002fc8" target="_blank">this</a>. And <a href="https://hbr.org/2018/07/when-generalists-are-better-than-specialists-and-vice-versa" target="_blank">this</a>. And <a href="https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/generalists-vs-specialists/" target="_blank">this</a>. Maybe even <a href="https://hbr.org/2020/09/in-rd-generalists-are-more-valuable-than-you-think" target="_blank">this</a>.</p>
+			<p>While I have changed the domains of my career often, the core of what I do remains the same. I repeatedly act as a change agent. I'm brought in to be a catalyst for change or just the spark for change. Whether or not the team knew it.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+			<p>One way I accomplish this is by constantly adding to my toolbox (yep, a shiny example of being a lifelong learner). See below for those tools in the Craftsman box. While the tools change depending on the problem I am solving, there are a few themes that stay the same: communicator, creative leader, problem-solver, and connector. See the <a href="">case studies</a> to see how it comes together.</p>
+			<p><span class="font-azoBold">This</span> is my superpower.</p>
+			<p>Do you have a problem you're trying to get your head around? I can help you bring clarity to help you formulate experiments to make change.</p>	          	          
+            <p>
+				<img src = "assets/img/sig2.svg" alt="the letter D which is the first letter of my name"/>
+            </p>
+          </div>
+            
+            
+        </div>
+      </div>
+
+    </section>
+    <!-- End How I do it Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section class="section" style="background-color: #000000;" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 class="open-sans-header"><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Who I've Worked For/With</span></h2>
+            <h4><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Some I have worked for, and some I have worked with. In two cases it was both.</span></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://www.thrustmaster.com" class="client-logo" target="_blank"><img
+                src="assets/img/logo-thrustmaster.png" alt="ThrusMaster Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://www.hannaandersson.com/" class="client-logo" target="_blank"><img
+                src="assets/img/logo-Hanna_Andersson.png" alt="Hanna Andersson Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="http://www.intel.com" class="client-logo" target="_blank"><img src="assets/img/logo-intel.png"
+                alt="Intel Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="http://www.nike.com" class="client-logo" target="_blank"><img src="assets/img/logo-nike.png"
+                alt="Nike Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://pacwestcom.com" class="client-logo" target="_blank"><img src="assets/img/logo-pacwest.png"
+                alt="PacWest Logo" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+
+    <!-- ======= Highlight Picture Section ======= -->
+    <section class="section site-portfolio werk">
+      <div class="container" data-aos="fade-up">
+        <div class="row mb-5">
+          <div>
+            <h2 class="open-sans-header"><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Case Studies</h2>
+            <!-- h2 class="open-sans-header" style="font-style: italic; border-top: 5px solid black; color: black; padding: 5px 5px 5px 0px;">Case Studies</h2 -->
+            <h4><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">WIIFM:<span style="color:rgb(239, 13, 13);">**</span> Here's how I have helped clients.</span></h4>
+          </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+              <img class="img-fluid" src="assets/img/main_7.jpg">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+              <img class="img-fluid" src="assets/img/main_8.jpg">
+            </div>
+            <p class="mb-0">&nbsp;</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+              <img class="img-fluid" src="assets/img/main_3.jpg">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+              <img class="img-fluid" src="assets/img/main_4.jpg">
+            </div>
+          </div>
+          <p>&nbsp;</p>
+          <h6><span style="color:rgb(239, 13, 13);">[** What's In It For Me]</span></h6>
+
+        </div>
+    </section><!-- End  Highlight Picture Section -->
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="section" style="background-color: #000000;" data-aos="fade-up">
+      <div class="container">
+        <div class="row mb-4">
+          <div>
+	        <h2 class="open-sans-header"><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Kudos & Good Words</h2>
+            <h4><span class="" style="background-color: #fece00; color: #000000; line-height: 1.5;">Don't take my word for it, here's what my clients say.</span></h4>
+          </div>
+        </div>
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David spreads out of the box thinking and [creates a]
+                      friendly environment in which people feel at east and can bring their best game into their
+                      problems...they are facing. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Dariusz Grudzień<br />Technical Program Manager, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David [has a] thirst for expanding his knowledge and
+                      delivery that always exceeded my expectation. He is a very effective team player, often listening
+                      to requirements, and tying the ends. Without David's finesse in documenting, designing and
+                      delivering, we wouldn't have delivered on our promises. <span class="fas fa-quote-right"></span>
+                    </p>
+                  </blockquote>
+                  <p>&mdash; Rita Wouhaybi<br />Senior Principal Engineer, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David is a creative and positive collaborator. His
+                      ability to think about ideas at a high-level provides valuable input. [He] provides good insight
+                      and creative input to help make them standout. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Matt Hyatt<br />Director of IT Marketing and Communications, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David is the kind of person everyone needs in their
+                      professional circle. His valuable skills in listening, processing, identifying, and analyzing at
+                      times of uncertainly made getting through [problems] that much easier. David saved me and my
+                      career by analyzing my thought process, finding my strengths, and teaching me easy ways to work
+                      through and overcome work challenges. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Hanan Alnizami<br />Director and Head of UX Research, New Relic</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> I found [David] to be consistently pleasant, tackling all
+                      assignments with dedication and a smile. David is a take-charge person who is able to present
+                      creative ideas and communicate the benefits. I highly recommend David for his working ethic and a
+                      great team player. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; George Wu<br />Founder and Executive Director, Wooster Armory NBR</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="row">
+          <a href="#" class="back-to-top d-flex align-items-center justify-content-center">Back to top >></a>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-0">&nbsp;</p>
+          <p class="mb-1">&copy; Copyright David Shaw. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <p class="mb-0">&nbsp;</p>
+          <a href="https://www.linkedin.com/in/davidshaw6/" target="_blank"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

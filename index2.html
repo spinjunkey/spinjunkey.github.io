@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>David Shaw - Catalyst | Communicator | Connector | Problem-solver - I help people make sense of the world.</title>
+  <meta name="description" content="David Shaw's design and development portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, nike, intel, thrustmaster, pacwest, hanna andersson">
+  <meta name="author" content="David Shaw">
+  <meta	property="og:image" content="https://www.davidianshaw.com/assets/img/og_image.png" />
+
+  <!-- Favicons -->
+  <link href="assets/img/cropped-avatar-32x32.png" rel="icon">
+  <link href="assets/img/cropped-avatar-180x180.png" rel="apple-touch-icon">
+  <link rel="apple-touch-icon-precomposed" href="assets/img/cropped-avatar-180x180.png" />
+  <link rel="shortcut icon" href="assets/img/cropped-avatar-32x32.png" />
+  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png"/>
+  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+<style>
+
+	@font-face {	
+		font-family: cloudy;
+		src: url('assets/webfonts/play/Cloudy With a Chance of Love.ttf') format('truetype');
+	}
+
+	@font-face {	
+		font-family: kb;
+		src: url('assets/webfonts/play/KBSticktoIt.ttf') format('truetype');
+	}
+
+	@font-face {	
+		font-family: azo;
+		src: url('assets/webfonts/play/AzoSans-Light.otf') format('opentype');
+	}
+
+	@font-face {	
+		font-family: azoBold;
+		src: url('assets/webfonts/play/AzoSans-Black.otf') format('opentype');
+	}
+	
+	.svg-clipped {
+		-webkit-clip-path: url(#svgPath);
+		clip-path: url(#svgPath);
+		float: left;
+	}
+
+	.me{
+		float:left; padding: 0px 0px 0px 0px;
+		-webkit-clip-path: polygon(17% 0, 96% 0, 78% 100%, 0% 100%);
+		clip-path: polygon(17% 0, 96% 0, 78% 100%, 0% 100%);
+	}
+	.bio{
+		/* background-color: #007FFF;
+		color: #ffffff;
+		clip-path: polygon(0 0,100% 50px,100% 100%,0 100%); */
+		}
+		
+		
+	.bio h1{
+		font-family: "cloudy";
+	}
+	
+	.bio h2{
+		font-family: "cloudy";
+	}
+
+	.services {
+		/* color: #007FFF; */
+		font: normal 2rem /* 60px/calc(70 / 60)*/ 'National 2 Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	.services h1{
+		font-family: "Pitch Semibold";
+	}
+	
+	.services h2{
+		/* font-family: "cloudy"; */
+		/* color: #F28506; */
+	}
+	
+	
+	.client{
+		/* color: #007FFF;	
+		color: #F28506; */
+	}
+
+	.client h2{
+		/* font-family: "cloudy"; */
+	}
+
+	.client h4{
+		/* color: #007FFF; */
+	}
+
+	.testimonial{
+		/* color: #ffffff;		*/
+	}
+
+	.testimonial h2{
+		/*font-family: "cloudy";
+		color: #F28506;	*/
+	}
+
+	.testimonial h4{
+		/* color: #007FFF;	*/
+	}
+
+	.partners{
+		background-color: #007FFF;
+		color: #ffffff;
+		clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+	}
+
+	.partners h2{
+		font-family: "cloudy";
+	}
+
+
+	.logo{
+		font-family:'kb';
+		font-weight:900;
+		font-size:28px;
+		fill:rgb(242,133,6);
+		fill-opacity:0.95;
+	}
+
+
+	.werk{
+		background-color: #007FFF;
+		color: #ffffff;
+		clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+		margin-top: -50px;
+	}
+	
+	
+	.footer{
+		background-color: #dfdfdf 
+	}
+
+	.bottom {
+	  clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+	  margin-top: -50px;
+	}
+	
+	.font-footer{
+		font-family: "cloudy";
+		font-size: small;	
+		/* color:#ffffff;	*/
+	}
+
+	.font-azo{
+		font-family: "azo";
+		font-size: large;	
+		line-height: 2.0em;	
+	}
+	
+	.font-azoBold{
+		font-family: "azoBold";
+	}
+	.border{
+		border:3px red dashed;
+	}
+	
+
+/******************************** popper css ****************/
+.image {
+	transform: scale(0.95, 0.95);
+	transition: transform 0.1s ease-in;
+	}
+	
+.image__foreground {
+	transform-origin: 50% 50%;
+	transform: translateY(4px) scale(1, 1);
+	transition: transform 0.2s ease-in;
+	}
+
+.image:hover {
+	transform: scale(1, 1);
+	}
+	
+.image:hover .image__foreground {
+	transform: translateY(-7px) scale(1.05, 1.05);
+	}
+
+.figure {
+	padding: 0em .1em 0em 0em;
+	width: 175px;
+	max-width: 175px;
+	margin: 0 auto;
+	/* border:2px red dashed; */
+	float: left;
+	}
+	
+/******************************** end of popper css ****************/	
+
+</style>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/all.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.1.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Navbar ======= -->
+  <!-- div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li class="active"><a href="index-all-projects.html">Home</a></li>
+            <li class="active"><a href="work.html">Work</a></li>
+            <li><a href="about.html">The Long Story</a></li>
+          </ul>
+        </div>
+		<div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <div>
+              <p><em>Questioning the status quo since 1969. </em></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Hire Me</h3>
+          <p>I'm David — I'm on a mission to help others see things "differently" - I help people make sense of the world. <br> <a href="mailto:david@davidshaw.me?subject=Hire Me">david@davidshaw.me</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div -->
+
+  <!-- nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      	<img src="assets/img/cropped-avatar-with-name.png" height="45px" alt="David Ian Shaw Logo" />
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav -->
+
+  <main id="main">
+	  
+    <!-- ======= Leader Section ======= -->
+    <!-- section class="section bio">
+      <div class="container">
+	      <div class="row" data-aos="fade-up" >
+            <h1>Words, Images, Audio, Story.</h1>
+			<h2>I help people make sense of the world.</h2>
+          </div>
+      </div>
+      
+    </section -->
+
+
+    <!-- ======= How I do it Section ======= -->
+
+    <section class="section pb-5 services">
+    	<div class="container">
+			<div class="row" data-aos="fade-up">
+				
+            	<h1><img src="assets/img/cropped-avatar-with-name.png" height="45px" alt="David Ian Shaw Logo" /> Words, Images, Audio, Story.</h1>
+				<h2>I help people make sense of the world.</h2>
+			</div>
+  
+		    <p class="mb-0">&nbsp;</p>  
+		  	<div class="row" data-aos="fade-up">
+			  	<!--n h2>WIIFY (What's In It For YOU) &mdash; Here's how I help</h2 -->
+			  	
+		    	<div class="row">
+		          	<div class="col-12 col-sm-6 col-md-6">
+				  		<p>As a generalist, no, scratch that, as a <strong><a href="https://www.bbc.com/worklife/article/20191118-what-shapes-a-polymath---and-do-we-need-them-more-than-ever" target="_blank">Polymath</a></strong> &mdash; an individual whose deep knowledge spans multiple subjects &mdash; I use complex bodies of knowledge to solve problems by way of connections outside the "proverbial" box.</p>	
+				  		<p style="padding-top: 10px;">Contrary to what the status quo believes, being a generalist makes a tremendous impact, especially in this modern complex era. Don't believe me? Read <a href="https://www.forbes.com/sites/forbesbusinesscouncil/2021/06/03/the-value-of-being-a-generalist/?sh=151897002fc8" target="_blank">this</a>. And <a href="https://hbr.org/2018/07/when-generalists-are-better-than-specialists-and-vice-versa" target="_blank">this</a>. And <a href="https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/generalists-vs-specialists/" target="_blank">this</a>. Maybe even <a href="https://hbr.org/2020/09/in-rd-generalists-are-more-valuable-than-you-think" target="_blank">this</a>.</p>
+				  		<p>While I have changed the domains of my career often, the core of what I do remains the same. I repeatedly act as a change agent. I'm brought in to be a catalyst for change or just the spark for change. Whether or not the team knew it.</p>
+				  		<p>One way I accomplish this is by constantly adding to my toolbox (yep, a shiny example of being a lifelong learner). See below for those tools in the Craftsman box. While the tools change depending on the problem I am solving, there are a few themes that stay the same: communicator, creative leader, problem-solver, and connector. See the <a href="">case studies</a> to see how it comes together.</p>
+				  					  	<div class="figure">
+					  	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" class="image" aria-hidden="true">
+					  		<title>David Shaw</title>
+						  	<desc>Creative funny selfie</desc>
+						  	<defs>
+						  		<clipPath id="maskImage" clipPathUnits="userSpaceOnUse">
+						  			<path d="M100 63A50 50 0 110 70C0 42 20 0 48 0c27 0 52 42 52 70z" />
+						  		</clipPath>
+						  		<clipPath id="maskBackground" clipPathUnits="userSpaceOnUse">
+						  			<path d="M190 101a50 50 0 01-50 50 50 50 0 01-50-50 50 50 0 0150-50 50 50 0 0150 50z" />
+						  		</clipPath>
+						  	</defs>
+					          
+						  	<!-- Background image -->
+						  	<g clip-path="url(#maskImage)" transform="translate(0 -7)">
+						  		<image clip-path="url(#maskBackground)" width="120" height="120" x="70" y="38" href="assets/img/abstract-background-1541768757yb0.jpg" transform="translate(-90 -31)" />
+						  		<!-- Foreground image -->
+						  		<image width="120" height="144" x="-15" y="0" fill="none" class="image__foreground" href="assets/img/pic2.png" />
+						  	</g>
+						</svg>
+					</div>
+						<p>Contrary to what the status quo believes, being a generalist makes a tremendous impact, especially in this modern complex era. Don't believe me? Read <a href="https://www.forbes.com/sites/forbesbusinesscouncil/2021/06/03/the-value-of-being-a-generalist/?sh=151897002fc8" target="_blank">this</a>. And <a href="https://hbr.org/2018/07/when-generalists-are-better-than-specialists-and-vice-versa" target="_blank">this</a>. And <a href="https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/generalists-vs-specialists/" target="_blank">this</a>. Maybe even <a href="https://hbr.org/2020/09/in-rd-generalists-are-more-valuable-than-you-think" target="_blank">this</a>.</p>
+					<p class="mb-0">&nbsp;</p>
+				</div>
+				  	<div class="col-12 col-sm-6 col-md-6">
+						<p>While I have changed the domains of my career often, the core of what I do remains the same. I repeatedly act as a change agent. I'm brought in to be a catalyst for change or just the spark for change. Whether or not the team knew it.</p>
+						<p>One way I accomplish this is by constantly adding to my toolbox (yep, a shiny example of being a lifelong learner). See below for those tools in the Craftsman box. While the tools change depending on the problem I am solving, there are a few themes that stay the same: communicator, creative leader, problem-solver, and connector. See the <a href="">case studies</a> to see how it comes together.</p>
+						<p><span class="font-azoBold">This</span> is my superpower.</p>
+						<p>Do you have a problem you're trying to get your head around? I can help you bring clarity to help you formulate experiments to make change.</p>
+						<p><span class="font-azoBold">For the corporate types</span>, here's the boring bio:</p>
+						<p><span class="fas fa-quote-left"></span> I'm an experienced creative leader who helps people make sense of the world. I accomplish this through deep curiosity, continual learning, and looking at problems with a systems lens. As a "generalist" I use these perspectives to span across multiple domains. It allows a unique perspective where I am able to connect the dots and spot patterns in complexity. I use my strong empathy to understand the human condition in a VUCA (Volatile, Uncertain, Complex, Ambiguous) world.</p>    
+						<p>I have a track record of inspiring others to act, change, and develop in new ways to deliver change and real impact. I'm a maker at heart, I #GSD (Get Shit Done). <span class="fas fa-quote-right"></span></p>
+				  	</div>
+				  	<p class="mb-0">&nbsp;</p>
+		        </div>
+				<img src="assets/img/signature.png" style="width: 400px;"/>
+				<p>I know ten languages. Ok I’m not necessarily fluent, but i know enough to make friends and say please and thank you. It all started on winter day as i was visiting my friend François. It was snowing pretty hard. Me and my other friend vs Francois and his brother had snow ball fight. He was talking to his brother in french. “Hey that’s not fair”. I wanted to know what he said. And that is the day the lightbulb went off for me how much languages and cultures intrigued me.</p>
+				<p>Hands-on Creative Leader with 20+ years of experience as an Interaction Designer, Visual Designer, Creative Producer, and Innovation Lead. Interested in complex issues at the intersection of Design, Business, and Technology. Left-brain and right-brain thinker. Experience coaching and mentoring junior team members. Business acumen spans multiple units including R8D, Product, IT, and HR</p>
+				<p>Artist since childhood with a strong belief in the power of play.</p>
+				<p>Areas of focus:</p>
+				<ul style="list-style-type: '+ '";>
+					<li>Visual Communication</li>
+					<li>Design Strategy</li>
+					<li>Creative Facilitation & Leadership</li>
+					<li>Design Thinking and Storytelling</li>
+					<li>Culture change and transformation</li>
+					<li>User-centered design</li>
+					<li>Program management</li>
+					<li>Systems thinking and business process innovation</li>
+					<li>Collaboration</li>
+				</ul>
+		    </div>
+
+        <div class="row font-azo" data-aos="fade-up"> 
+        </div>
+    </section>
+    
+<!-- section class="section pb-5 bio">
+	<div class="container">
+		<div class="row font-azo aos-init aos-animate" data-aos="fade-up">
+			<h2>My Toolbox</h2>
+		</div>
+	</div>
+</section -->    
+
+    <!-- ======= Works Section ======= -->
+    <section class="section services">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>How I've Helped My Clients</h2>
+            <p class="mb-0"></p>
+          </div>
+        </div>
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="projects/intel-health-guide/work-intel-health-guide.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Digital Health - Integrated Development</h3>
+                <span>Traditional separation of design and engineering revisited.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio-integrated-development.png">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Human Centered HR</h3>
+                <span>Bringing Design Thinking into a traditional HR group.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio-design-thinking-hr.png">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Internal Communications 2.0</h3>
+                <span>Traditional communications methods are just not effective anymore.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio-ai-news.png">
+            </a>
+          </div>
+          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>LEGO &copy; Serious Play</h3>
+                <span>A facilitated method for strategic decision-making and problem resolution.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio-lsp.png">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Freelance Nation</h3>
+                <span>The future of work is here.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio-fln2.png">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-complexvscomplicated.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Making Difficult Subjects Understandable</h3>
+                <span>New ways to make the difficult understandable to everyone.</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_1.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+
+    <!-- ======= Partners Section ======= -->
+    <section class="section services">
+      <div class="container" data-aos="fade-up">
+        <div class="row mb-5">
+          <div class="row">
+            <h2>My Partners</h2>
+            <h4>Some I have worked for, and some I have worked with. In one case it was both. </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://www.thrustmaster.com" class="client-logo" target="_blank"><img src="assets/img/logo-thrustmaster.png" alt="ThrusMaster Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://www.hannaandersson.com/" class="client-logo" target="_blank"><img src="assets/img/logo-Hanna_Andersson.png" alt="Hanna Andersson Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="http://www.intel.com" class="client-logo" target="_blank"><img src="assets/img/logo-intel.png" alt="Intel Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="http://www.nike.com" class="client-logo" target="_blank"><img src="assets/img/logo-nike.png" alt="Nike Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://pacwestcom.com" class="client-logo" target="_blank"><img src="assets/img/logo-pacwest.png" alt="PacWest Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-2">
+            <a href="https://6453alumni.com" class="client-logo" target="_blank"><img src="assets/img/logo-6453.jpg" width="30%" alt="PacWest Logo" class="img-fluid"></a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Partners Section -->
+
+
+    <!-- ======= Highlight Picture Section ======= -->
+    <!-- section class="section site-portfolio werk">
+      <div class="container"  data-aos="fade-up">
+        <div class="row mb-5 align-items-center">
+	        <div class="row">
+	          <div class="col-12 col-sm-6 col-md-6">
+			  	<img class="img-fluid" src="assets/img/main_7.jpg">	
+			  	<p class="mb-0">&nbsp;</p>
+			  </div>
+	          <div class="col-12 col-sm-6 col-md-6">
+			  	<img class="img-fluid" src="assets/img/main_8.jpg">	          
+			  </div>
+			  <p class="mb-0">&nbsp;</p>
+	        </div>
+	        <div class="row">
+	          <div class="col-12 col-sm-6 col-md-6">
+			  	<img class="img-fluid" src="assets/img/main_3.jpg">	          
+			  	<p class="mb-0">&nbsp;</p>
+			  </div>
+	          <div class="col-12 col-sm-6 col-md-6">
+			  	<img class="img-fluid" src="assets/img/main_4.jpg">	          
+			  </div>
+	        </div>
+
+      </div>     
+    </section --> <!-- End  Highlight Picture Section -->
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="section pt-0 testimonial">
+      <div class="container" data-aos="fade-up">
+	    <div class="row mb-5 client">
+	          <div class="col-12 col-sm-6">
+		          <p class="mb-0">&nbsp;</p>
+	            <h2>Don't just take my word for it</h2>
+	            <h4>Here's what my clients say.</h4>
+	          </div>
+        </div>
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">                  
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David spreads out of the box thinking and [creates a] friendly environment in which people feel at ease and can bring their best game into their problems...they are facing. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Dariusz Grudzień<br />Technical Program Manager, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David [has a] thirst for expanding his knowledge and delivery that always exceeded my expectation. He is a very effective team player, often listening to requirements, and tying the ends. Without David's finesse in documenting, designing and delivering, we wouldn't have delivered on our promises. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Rita Wouhaybi<br />Senior Principal Engineer, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David is a creative and positive collaborator. His ability to think about ideas at a high-level provides valuable input. [He] provides good insight and creative input to help make them standout. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Matt Hyatt<br />Director of IT Marketing and Communications, Intel Corp</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> David is the kind of person everyone needs in their professional circle. His valuable skills in listening, processing, identifying, and analyzing at times of uncertainly made getting through [problems] that much easier. [He] saved...my career by analyzing my thought process, finding my strengths, and teaching me...ways to work through and overcome work challenges. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; Hanan Alnizami<br />Director and Head of UX Research, New Relic</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial">
+                  <blockquote>
+                    <p><span class="fas fa-quote-left"></span> I found [David] to be consistently pleasant, tackling all assignments with dedication and a smile. David is a take-charge person who is able to present creative ideas and communicate the benefits. I highly recommend David for his working ethic and a great team player. <span class="fas fa-quote-right"></span></p>
+                  </blockquote>
+                  <p>&mdash; George Wu<br />Founder and Executive Director, Wooster Armory NBR</p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+<hr noshade="" />
+  <!-- ======= Footer ======= -->
+  <footer class="footer font-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+			<p class="mb-0">&nbsp;</p>
+          <p class="mb-1">&copy; Copyright David Shaw. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <p class="mb-0">&nbsp;</p>
+          <a href="https://www.linkedin.com/in/davidshaw6/" target="_blank"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
