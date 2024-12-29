@@ -1,0 +1,34 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+
+# Permalinks
+permalink:        :title
+
+# Setup
+title:            Lisa Charlotte Muth
+tagline:          Portfolio & Blog
+description:      What Lisa writes, designs and talks about.
+url:              https://lisacharlottemuth.com/
+baseurl:
+
+author:
+  name:           "Lisa Charlotte Muth"
+  url:            https://x.com/lisacmuth
+  email:          lisacharlottemuth@gmail.com
+  twitter_user:   lisacmuth
+
+paginate:         5
+
+# Plugins
+whitelist:        []
+plugins:          [jekyll-paginate]
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           blog.lisacharlotterost.de
+  sass:
+    sass_dir:     _sass

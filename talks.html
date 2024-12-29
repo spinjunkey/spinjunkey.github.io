@@ -1,0 +1,115 @@
+---
+layout: default
+title: Talks
+description: Slides and transcripts of my best talks.
+---
+
+<div class="completeright">
+
+    <!-- display the name of the category -->
+    <div class="category-header">
+      <hr>
+      <h2>Talks</h2>
+
+      <!-- Go back the main page to see a collection of my best talks</a> -->
+      <div class="sidebar-text">
+        &rarr; <a href="/index.html#talks">GO TO THE MAIN PAGE TO SEE ONLY ✦ SELECTED TALKS</a>
+      </div>
+
+      <!-- put a little intro text below the category title -->
+      <div class="blogcontainer article-text">
+        <p>Talks let me combine images (slides) and text (my speech) in a more tension-building, direct way than blog posts. I've given some general data vis workshops and talks, but here I show the talks I used as an excuse to research a completely new question:
+        </p>
+    <br></div>
+
+
+  <div class="grid">
+
+    {% for post in site.categories.talk %}
+
+    <!-- don't display about and impressum page -->
+    {% unless post.layout == 'withoutdate' %}
+
+      <!-- open external links -->
+      {% capture url_to_use %}{{ post.url }}{% endcapture %}
+      {% if post.external %}
+        {% capture url_to_use %}{{ post.external }}{% endcapture %}
+      {% endif %}
+
+      <!-- display title, image and date for each post -->
+      <a class="thumb" href="{{ post.url }}">
+      <div class="post">
+        <div class="post-image">
+          <img src="{{ post.image }}"/>
+        </div>
+        <div class="post-date">
+
+          <!-- show if it's a faved article -->
+          {% if post.categories contains "fav" %}
+            ✦
+          {% endif %}
+
+          <!-- display month & year when blog post or talk. Only display year for design work -->
+          {% if category contains "design" %}
+             {{ post.date | date: "%Y" }}
+          {% else %}
+             {{ post.date | date: "%B %Y" }}
+          {% endif %}
+
+          <!-- show for which client I've worked for -->
+          {% unless post.whofor == nil %}
+            <b><span style="color:#cc0000">{{ post.whofor }}</b></span>
+          {% endunless %}
+
+        </div>
+        <h1 class="post-title">
+            {{ post.title }}
+        </h1>
+        <div class="post-date">
+            {{ post.summary }}
+        </div>
+      </div></a>
+
+      {% endunless %}
+    {% endfor %}
+
+  </div>
+
+  <div class="blogcontainer article-text">
+
+    <h2>Recordings</h2>
+    <p>
+
+    If you'd like to watch me talk, you can choose between recordings from <a href="https://www.youtube.com/watch?v=B4_YFBPV1AM">CCC 2016</a>, <a href="https://www.youtube.com/watch?v=GnNazd3jZXU">Republica 2017</a>, <a href="https://youtu.be/8XgF-RmNwUc">OpenVisConf 2017</a> (all in English) and <a href="https://youtu.be/53H9iz8O2ms">Netzwerk Recherche 2018</a> (in German).<br><br>
+    <!-- <video loop autoplay muted controls width="100%">
+      <source src="/pic/190211_unitednations.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video><br> -->
+  </p>
+
+
+    <!-- <h2>Talk inquries</h2>
+    <p>It's very likely that I'll decline an offer to speak at your event these days – I'm trying to travel less and enjoy Berlin instead. You can still try:<br><a href="mailto:lisacharlotterost@gmail.com">lisacharlotterost@gmail.com</a><br><br> -->
+    <!-- I want the audience of your event to take away as much as they can from my talk. To stay sane despite that sense of perfection, please understand that I decided to only give a few but well prepared talks each year. I will decide for or against giving a talk at your event based on a combination of indicators: location, potential learnings from other talks (if any), how excited I am about other speakers at the event (if any), speaker fee or other expenses, and potential impact.
+    If you could talk about these points in your first email, I'd be very grateful. Thank you!<br><br> -->
+    <!-- </p> -->
+
+
+
+        <h2>Nice things others have said about my talks</h2>
+        <p>
+          <!-- &rarr; "Excellent talk, wish this aspect of data visualization were discussed more often" – <a href="https://twitter.com/galka_max/status/814209170375376900">Max Galka</a> about my talk <a href="/datapoint-in-bar">A Data Point Walks Into a Bar"</a><br> -->
+        <h2 style="margin-top: 0px; margin-bottom: 5px;">"You made me think so hard about how I want to structure my upcoming dataviz, thank you for that beautiful talk."</h2>
+        <small>— <a href="https://twitter.com/sxywu/status/874727133087531008">Shirley Wu</a> about <a href="/datapoint-in-bar">A Data Point Walks Into a Bar"</a></small><br><br>
+
+        <h2 style="margin-top: 0px; margin-bottom: 5px;">"Your talk from #rp17 is the one that stuck with me longest. Really enjoyed it and keep returning to it."</h2>
+        <small>— <a href="https://twitter.com/karmel80/status/868785088510779393">Karen Melchior</a> about <a href="/why-do-we-not-believe-in-facts">"Why We Don't Believe In Facts, And How To Fix That"</a></small><br><br>
+
+        <h2 style="margin-top: 0px; margin-bottom: 5px;">"This was my favorite talk of the conference. ... It's an important ethical question that isn't discussed enough, and Lisa makes some good points while keeping the talk light."</h2>   <small>— <a href="https://eagereyes.org/blog/2016/ten-great-talks-at-information-2016">Robert Kosara</a> about <a href="/less-news-more-context">"Less News, More Context"</a></small>
+
+        </p>
+
+  </div>
+
+
+</div>

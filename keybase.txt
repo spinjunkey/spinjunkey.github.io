@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/lisacrost
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lisacharlotterost.de
+  * I am lisacrost (https://keybase.io/lisacrost) on keybase.
+  * I have a public key with fingerprint 8C3B BE9B A39D DEB5 E4AB  AEFF FD8D F0DC 7AA1 8C17
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204f0a92c0ce0d5a2b6230340da9b5b0c8993a63bc9790a980dafd42a0fa4fba420a",
+      "fingerprint": "8c3bbe9ba39ddeb5e4abaefffd8df0dc7aa18c17",
+      "host": "keybase.io",
+      "key_id": "fd8df0dc7aa18c17",
+      "kid": "0101cc2c0b51e73f86d64dfb5f02eae65d4bedab59c278c5edc34f0faa9a16964fdc0a",
+      "uid": "8dead9b78965fc65dd38a1d1a6217a19",
+      "username": "lisacrost"
+    },
+    "service": {
+      "hostname": "lisacharlotterost.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1565374294,
+  "expire_in": 157680000,
+  "prev": "ddadf843e6be59e7e87468582bb8712cd572bde2b6ac0b5cd0cf12c4fc549d85",
+  "seqno": 100,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMNwAnicbZJ7TBxVFMYXKc/SSJRWN2linRowQtd5P3hVaC0tPtKtKa6xZL0z984y
+QHe3swPl4dZYE0WQFlaECrYu1JpGg31LsRQEKhYaRctLKiqoPGqtICFVoYIzxCb+
+4fwzmXO/73e/c+ZcWhVoCg/4u3xmpKj+jfsCrrQ35Jkyn2rKKMZEFyzE4ouxHLT8
+QrkQeTR7jgKxeAwnSJyWcSCQEi4hHDKAFFmSwikah0AQGRGXeEGgAEuJksAJupDX
+D2RIkwCXAS2LgCZxgMVhsuJ0INWtKk5Nx/ISJYpIEAElQIhEBtFABEiWZchDGYcS
+BwDBSwSnG7NcHsOhhxOBB1kUl17TP+zL8f5Hfyc3TkiSHlpkCMRRMs9CloayyMg4
+iQBiGUiLCAKRESSS4yUGQYnS+5QBEADBCiwtQ2k5d94yjocIQEHkeIFlZEl3Q4oH
+BCQASxIcIARD6EGqE+xGujpX8QBJNXJ74zC9nK9IyJis0cp/JVlAzXVpGjKkFoh0
+iFt1aS7JlasrsjTN7Yk3CFqh27DsRaL9X5hdVJxQH6juyEeqR3E5sXhCV0qaYtAJ
+hmUojiYFOg5DBW5FRXbFUDAcy+P6Y9yD8nUkhADKPE0hVkSMgDjEczTLMzwpijxH
+kBJkOFKESP/lwJikBHFJ1su0LDG0AHkGM9rb43TpbIOqAYcO9SgOJ9DyVIR5O9p3
+rTAFhJuCg+4yVs0UHhZ5ZwFf8t+9sCJ5g3n1vqaMMuxq20XHeX/jdOtUg9VfGlqQ
+M7+5bk6Lsn3arEwGd3RMXMMjKr/5MzA8tHY2lDHX70h8eXTQ1xxGHH8odZgajO2x
+BQQ1tI8t+Pqptg8Xfkio+zl096O+7KI/ehfX92utLQ9T4wPIdzBhY9jxgqW2MWtq
+sKN6u0f+9oPtE/z6/r6p3251VI30RHzcbJtpnBeLrdmx3u8c3OdfeWcnrcPo+W3e
+sv6z9+RufvHGrzOnk7qH7NdvVMWsTZsa2RQYlXm9u0OIOUFPpD2RddvSlXg/N/FF
+EFGSkj09Gb5j6gLHbRkgd9309yY1umKk5wpbn/bnDZ27vDBbs8i62y9u/TH/y9Wj
+Y5aKrmQpbCcxV72hTkmNXnfoJHa0uaQ95vtu85qWyMnRTb+HvOM6cKa8i09Yihp4
+fWPvC49ZfEEtxQOND1Z/dviVRPyt4aIhbu7xkPSgverWlcU9+xoODSyWnrr9XuGr
+V23TRO9Hp+y1byf5S6/dKl+VbrvZWVmedunMunf/CuviJ86Zy6MzaVtf0QX3T45K
+rfPZk888UPbktntT5i8v7fe9X3BUMKmNhWffjK9Z0/bJI8LhLk1uK03+5TVr+lq8
+Zr9FnTqmNdkja80he5ZOZ1TaIyoqY5WDNmvVFk/D+WMrv7Yf2XkkxTyYMF5SLzQO
+j3u56LLOiit9J2qSsv4BT/zXJg==
+=HCCM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lisacrost
+
+==================================================================
