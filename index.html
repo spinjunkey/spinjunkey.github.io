@@ -1,72 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- PyScript CSS -->
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/releases/2024.5.1/core.css"
+    />
+    <!-- This script tag bootstraps PyScript -->
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2024.5.1/core.js"
+    ></script>
 
-  <title>David Shaw - Catalyst | Communicator | Connector | Problem-solver - I help people make sense of the world.</title>
-  <meta name="description" content="David Shaw's design and development portfolio">
-  <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, nike, intel, thrustmaster, pacwest, hanna andersson">
-  <meta name="author" content="David Shaw">
-  <meta	property="og:image" content="https://www.davidianshaw.com/assets/img/og_image.png" />
+    <!-- for splashscreen -->
+    <style>
+      #loading {
+        outline: none;
+        border: none;
+        background: purple;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="module">
+      const loading = document.getElementById("loading");
+      addEventListener("py:ready", () => loading.close());
+      loading.showModal();
+    </script>
 
-  <!-- Favicons -->
-  <link href="assets/img/cropped-avatar-32x32.png" rel="icon">
-  <link href="assets/img/cropped-avatar-180x180.png" rel="apple-touch-icon">
-  <link rel="apple-touch-icon-precomposed" href="assets/img/cropped-avatar-180x180.png" />
-  <link rel="shortcut icon" href="assets/img/cropped-avatar-32x32.png" />
-  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png"/>
-  <link rel="icon" type="image/png" href="assets/img/cropped-avatar-32x32.png"/>
+    <title>
+      David Shaw - Catalyst | Communicator | Connector | Problem-solver - I help
+      people make sense of the world.
+    </title>
+    <meta
+      name="description"
+      content="David Shaw's design and development portfolio"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, portfolio, nike, intel, thrustmaster, pacwest, hanna andersson"
+    />
+    <meta name="author" content="David Shaw" />
+    <meta
+      property="og:image"
+      content="https://www.davidianshaw.com/assets/img/og_image.png"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kirang+Haerang&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-<style>
-:root{
-  --heading-2-size-value: 2.8;
-}
+    <!-- Favicons -->
+    <link href="assets/img/cropped-avatar-32x32.png" rel="icon" />
+    <link href="assets/img/cropped-avatar-180x180.png" rel="apple-touch-icon" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/img/cropped-avatar-180x180.png"
+    />
+    <link rel="shortcut icon" href="assets/img/cropped-avatar-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/cropped-avatar-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/cropped-avatar-32x32.png"
+    />
 
-@media screen and (min-width: 768px ), screen and (max-width: calc (1944px - 1px)) and (orientation: landscape){
-  h2 {
-    font-size: calc((var(--heading-2-size-value) - 1) * 1.2vw + 1rem) ;
-  }
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kirang+Haerang&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-  body {
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    font-family:  "Barriecito", Arial, sans-serif;
-    font-size: calc((var(--heading-2-size-value) - 1) * 1.2vw + 1rem); /* 3rem */
-    text-align: center;
-  }
-	
-	
+      :root {
+        --heading-2-size-value: 2.8;
+      }
 
-</style>
-</head>
+      @font-face {
+        font-family: CustomHeader;
+        src: url("./assets/webfonts/Futura-ND.ttf");
+      }
 
-<body>
-  <div>
-    <h1>No worry, brah! </h1>
-    <p style="padding: 0 10vh 0 10vh;">We jus’ doin’ one lil’ makeover right now—kinda like one caterpillar turnin’ butterfly kine. But when I come back, hooo, you betta watch out! Gonna be mo’ fresh, mo’ slick, an’ all kine bettah den before. Stay tuned, yeah? Mahalo fo’ your patience! 🤙🌈</p>
-    <p>In meantime.....</p>
-    <p> <img src="assets/img/temp.png" width="90%" /> 
-      
-    </p>
-          
-    </p>
-  </div>
+      @media screen and (min-width: 768px),
+        screen and (max-width: calc (1944px - 1px)) and (orientation: landscape) {
+        h1 {
+          font-size: 5.5xem;
+          padding: 40px 40px 0px 40px;
+          font-family: CustomHeader;
+          text-transform: uppercase;
+          /* font-size: calc((var(--heading-2-size-value) - 1) * 1.2vw + 1rem) ; */
+        }
+      }
 
-</body>
+      body {
+        background: linear-gradient(-35deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
 
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      /************** end background gradient animation **************/
+      body {
+        display: flex;
+        /* height: 100vh;
+        background-color: black; */
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: calc(
+          (var(--heading-2-size-value) - 1) * 1.2vw + 1rem
+        ); /* 3rem */
+        text-align: center;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "main"
+          "footer";
+        row-gap: 10px;
+        //padding: 10px;
+        border: 2px dotted red;
+      }
+
+      .grid-container > div {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .header {
+        grid-area: header;
+        text-align: center;
+      }
+
+      .header > h1 {
+        font-size: 40px;
+      }
+
+      .nav {
+        grid-area: menu;
+      }
+
+      .content {
+        grid-area: main;
+      }
+
+      .content > h1 {
+        font-size: 30px;
+        margin-bottom: 7px;
+      }
+
+      .content > p {
+        margin-bottom: 7px;
+      }
+
+      .footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <dialog id="loading">
+      <h1>Loading...</h1>
+    </dialog>
+
+    <div class="grid-container">
+      <div class="header">
+        <h1>Hola. こんにちは. Hallo. Aloha. Hi.</h1>
+      </div>
+
+      <div class="content">
+        <p>I'm David - Designer. Creative Technologist. Communicator</p>
+        <p><img src="assets/img/temp.png" width="90%" /></p>
+      </div>
+
+      <div class="footer">
+        <!-- Footer -->
+        <div id="mpl"></div>
+        <script type="py" src="main.py" config="pyscript.toml"></script>
+        <section class="pyscript">
+          <p>
+            <py-script> import sys </py-script>
+            <py-script> from pyscript import display </py-script>
+            <py-script> display(sys.version) </py-script>
+              <py-script>
+             
+            </py-script>
+          </p>
+        </section>
+
+    </div>
+
+  </body>
 </html>
