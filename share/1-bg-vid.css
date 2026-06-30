@@ -1,0 +1,14 @@
+/* (A) WRAPPER */
+#wrap { position: relative; }
+
+/* (B) VIDEO BACKGROUND & CONTENT IN FRONT */
+#vid, #content { position: absolute; width: 100%; }
+#vid { z-index: 1; }
+#content { z-index: 2; }
+
+/* (X) COSMETICS - NOT IMPORTANT */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+#content { padding: 10px; }
