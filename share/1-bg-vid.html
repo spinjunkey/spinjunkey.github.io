@@ -2,13 +2,29 @@
 <html>
   <head>
     <title>Background Video</title>
-    <link rel="stylesheet" href="1-bg-vid.css">
+    <style>
+        #wrap { position: relative; }
+
+        /* (B) VIDEO BACKGROUND & CONTENT IN FRONT */
+        #vid, #content { position: absolute; width: 100%; }
+        #vid { z-index: 1; }
+        #content { z-index: 2; }
+
+        /* (X) COSMETICS - NOT IMPORTANT */
+        * {
+          font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        }
+        #content { padding: 10px; }
+
+    </style>
+
   </head>
   <body>
     <!-- (A) WRAPPER -->
     <div id="wrap">
       <!-- (B) BACKGROUND VIDEO -->
-      <video id="vid" src="test.mp4" autoplay muted loop></video>
+      <video id="vid" src="rain.mp4" autoplay muted loop></video>
 
       <!-- (C) CONTENT -->
       <div id="content">Hello World!</div>

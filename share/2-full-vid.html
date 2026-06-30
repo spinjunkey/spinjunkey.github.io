@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Video</title>
+    <style>
+        html, body { margin: 0; padding: 0; }
+
+        /* (B) FULL PAGE VIDEO */
+        #vid {
+          position: fixed; top: 0; left: 0;
+          width: 100vw; height: 100vh;
+          object-fit: cover;
+          z-index: 1; /* background */
+        }
+
+        /* (C) CONTENT */
+        #content {
+          position: absolute; top: 0; left: 0;
+          z-index: 2; /* in front */
+        }
+
+        /* (X) COSMETICS - NOT IMPORTANT */
+        * {
+          font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        }
+        #content { padding: 10px; }    
+    </style>
+
+  </head>
+  <body>
+    <!-- (A) BACKGROUND VIDEO -->
+    <video id="vid" src="rain.mp4" autoplay muted loop></video>
+
+    <!-- (B) CONTENTS -->
+    <div id="content">
+      Hello World!
+      <div style="height:1000px"></div>
+      TEST
+    </div>
+  </body>
+</html>
