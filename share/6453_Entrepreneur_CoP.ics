@@ -1,0 +1,73 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260715T100000
+DTEND;TZID=America/Los_Angeles:20260715T120000
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=6;INTERVAL=2;BYDAY=WE
+DTSTAMP:20260630T212542Z
+ORGANIZER;CN=John Vyhlidal:mailto:john@unleashepic.com
+UID:7ca2con0lhelksp608mj9qc3bn@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jana@6453alumni.com;X-NUM-GUESTS=0:mailto:jana@6453alumni.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=John Vyhlidal;X-NUM-GUESTS=0:mailto:john@unleashepic.com
+X-MICROSOFT-CDO-OWNERAPPTID:-247622132
+CREATED:20260630T202817Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin Zoom Meeting\nhttps://us06web.zoom.us/j/8381
+ 9233984?pwd=cYUeTPJUyj0ZNuowBkVRH6EjF3UJXo.1&jst=2 (ID: 83819233984\, passc
+ ode: 761826)\n\nJoin by phone\n(US) +1 386-347-5053 (passcode: 761826)\n\nJ
+ oin using SIP\n83819233984@zoomcrc.com (passcode: 761826)\n\nJoining instru
+ ctions: https://www.google.com/url?q=https://applications.zoom.us/addon/inv
+ itation/detail?meetingUuid%3DZq%252FZWHtzTf6At9Dx4Tobtw%253D%253D%26signatu
+ re%3Dbfb05738e77d3c35f36dd7761d08b8d0d84e4dc8c28af2f40e8883f203f0d3d3%26v%3
+ D1&sa=D&source=calendar&usg=AOvVaw1tE6dFGu6najBDDyAdnn9P\n\nMeeting host: <
+ a href="mailto:john@unleashepic.com" target="_blank">john@unleashepic.com</
+ a><br /><br />Join Zoom Meeting: <br /><a href="https://www.google.com/url?
+ q=https://us06web.zoom.us/j/83819233984?pwd%3DcYUeTPJUyj0ZNuowBkVRH6EjF3UJX
+ o.1%26jst%3D2&amp\;sa=D&amp\;source=calendar&amp\;usg=AOvVaw1pRQXz74gq_peLk
+ iiZqUGh" target="_blank">https://us06web.zoom.us/j/83819233984?pwd=cYUeTPJU
+ yj0ZNuowBkVRH6EjF3UJXo.1&amp\;jst=2</a><br /><br />Meeting agenda: <br /><a
+  href="https://www.google.com/url?q=https://docs.zoom.us/agenda/doc/6f8a95c
+ d-ef58-44e8-9390-a9869444e2c9?from%3Dgsuite&amp\;sa=D&amp\;source=calendar&
+ amp\;usg=AOvVaw2wgyTQSpOUSxPbsr2nAqWK" target="_blank">https://docs.zoom.us
+ /agenda/doc/6f8a95cd-ef58-44e8-9390-a9869444e2c9?from=gsuite</a><br /><br /
+ >Chat with Everyone: <br /><a href="https://www.google.com/url?q=https://us
+ 06web.zoom.us/launch/jc/83819233984&amp\;sa=D&amp\;source=calendar&amp\;usg
+ =AOvVaw3I5Irc_Com3TWEybYF2qlN" target="_blank">https://us06web.zoom.us/laun
+ ch/jc/83819233984</a>\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260630T212533Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:6453 Entrepreneur CoP
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H10M0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
