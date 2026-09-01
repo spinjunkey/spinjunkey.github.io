@@ -1,54 +1,72 @@
 (() => {
   const root = document.documentElement;
   const header = document.querySelector('[data-header]');
-  const menuButton = document.querySelector('[data-menu-toggle]');
-  const nav = document.querySelector('[data-nav]');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const updateHeader = () => {
-    header.classList.toggle('scrolled', window.scrollY > 20);
-  };
-  updateHeader();
-  window.addEventListener('scroll', updateHeader, { passive: true });
+  const setHeaderState = () => header.classList.toggle('scrolled', window.scrollY > 16);
+  setHeaderState();
+  window.addEventListener('scroll', setHeaderState, { passive:true });
 
-  menuButton.addEventListener('click', () => {
-    const open = menuButton.getAttribute('aria-expanded') === 'true';
-    menuButton.setAttribute('aria-expanded', String(!open));
-    nav.classList.toggle('open', !open);
-  });
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    root.classList.add('motion-ready');
+    const reveals = [...document.querySelectorAll('.reveal')];
+    const heroReveals = reveals.filter(el => el.closest('.hero'));
+    requestAnimationFrame(() => heroReveals.forEach((el, i) => setTimeout(() => el.classList.add('in-view'), 80 + i * 70)));
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      });
+    }, { threshold:.12, rootMargin:'0px 0px -8% 0px' });
+    reveals.filter(el => !el.closest('.hero')).forEach(el => observer.observe(el));
+  }
 
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    });
-  });
+  const modalTriggers = [...document.querySelectorAll('[data-open-modal]')];
+  let activeModal = null;
+  let lastFocused = null;
+  const focusableSelector = 'a[href],button:not([disabled]),textarea,input,select,[tabindex]:not([tabindex="-1"])';
 
-  if (reduceMotion || !('IntersectionObserver' in window)) return;
+  function openModal(modal) {
+    if (!modal) return;
+    lastFocused = document.activeElement;
+    activeModal = modal;
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    requestAnimationFrame(() => modal.querySelector('.modal-panel').focus());
+    document.addEventListener('keydown', onKeydown);
+  }
 
-  root.classList.add('motion-ready');
+  function closeModal() {
+    if (!activeModal) return;
+    activeModal.hidden = true;
+    document.body.classList.remove('modal-open');
+    document.removeEventListener('keydown', onKeydown);
+    const returnTo = lastFocused;
+    activeModal = null;
+    lastFocused = null;
+    if (returnTo && typeof returnTo.focus === 'function') returnTo.focus();
+  }
 
-  const items = [...document.querySelectorAll('.reveal')];
-  const heroItems = items.filter(el => el.closest('.hero'));
+  function onKeydown(event) {
+    if (!activeModal) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeModal();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusables = [...activeModal.querySelectorAll(focusableSelector)].filter(el => !el.hasAttribute('hidden'));
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault(); first.focus();
+    }
+  }
 
-  requestAnimationFrame(() => {
-    heroItems.forEach((el, i) => {
-      window.setTimeout(() => el.classList.add('in-view'), 70 + i * 50);
-    });
-  });
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('in-view');
-      obs.unobserve(entry.target);
-    });
-  }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -8% 0px'
-  });
-
-  items
-    .filter(el => !el.closest('.hero'))
-    .forEach(el => observer.observe(el));
+  modalTriggers.forEach(trigger => trigger.addEventListener('click', () => openModal(document.getElementById(trigger.dataset.openModal))));
+  document.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', closeModal));
 })();

@@ -1,28 +1,21 @@
-REFRAMƎ website — About update
+REFRAMƎ one-page funnel prototype
 
-Contents
---------
-index.html
-styles.css
-script.js
-assets/portrait.jpg
+Architecture
+1. Hero
+2. Recognizable client problems
+3. Proof / three case studies
+4. About David
+5. CTA
 
-How to use
-----------
-Open index.html directly in a browser, or upload this folder to any static host.
+Case study interactions
+Each SEE THE REFRAME button opens an accessible modal on the same page.
+- Escape closes the modal
+- Clicking the backdrop closes it
+- Keyboard focus stays inside the modal
+- Focus returns to the original case-study button after closing
 
 Before publishing
------------------
-1. Replace hello@example.com in index.html with your real email.
-2. Replace the three "#" case-study links with real destinations.
-3. Edit the About copy directly in index.html if you want to tune the wording.
-4. The site currently loads Inter from Google Fonts. Replace the @import at the
-   top of styles.css if you want a different or self-hosted typeface.
-
-Animation
----------
-The page uses vanilla JavaScript IntersectionObserver for staggered scroll
-reveals and a clipped portrait reveal. Visitors who have "Reduce Motion"
-enabled get a static version automatically.
-
-No framework or build step is required.
+- Replace hello@example.com with your real email.
+- Edit copy in index.html as desired.
+- The case-study artwork is CSS-generated placeholder art, so no extra image assets are needed.
+- The page loads Inter from Google Fonts.
