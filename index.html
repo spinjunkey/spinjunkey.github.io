@@ -1,362 +1,252 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="REFRAMƎ helps leaders and teams make sense of complicated, ambiguous problems—especially when the answer isn't obvious yet.">
-  <title>REFRAMƎ — See the problem differently.</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Provocateur — David Shaw</title>
+  <meta name="description" content="Challenge what's assumed. Make what's possible. David Shaw helps people see differently, think together, and move meaningful work forward.">
+  <style>
+    :root{
+      --bg:#050505; --fg:#f7f7f5; --muted:#a8a8a8; --rule:#3a3a3a;
+      --max:1180px; --pad:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--bg);color:var(--fg);
+      font-family:Arial,Helvetica,sans-serif;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.13em}
+    .page{width:min(calc(100% - 2*var(--pad)),var(--max));margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0 12px}
+    .logo{font-size:20px;font-weight:700;letter-spacing:-.03em;text-decoration:none}
+    nav{display:flex;flex-wrap:wrap;gap:22px;font-size:14px}
+    nav a{text-decoration:none;position:relative;transition:opacity .25s ease}
+    nav a:hover{text-decoration:none;opacity:.55}
+    .hero{
+      display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,.8fr);
+      gap:56px;align-items:end;padding:52px 0 30px;min-height:500px;position:relative;
+    }
+    .hero h1{margin:0;max-width:760px;font-size:clamp(56px,8vw,112px);line-height:.91;letter-spacing:-.06em;font-weight:500}
+    .hero h1 .under{text-decoration:none;position:relative;display:inline-block}
+    .hero-aside{padding-bottom:14px;max-width:330px;justify-self:end}
+    .hero-aside p{margin:0 0 22px;font-size:20px;line-height:1.3;letter-spacing:-.02em}
+    .hero-aside a{font-size:16px;font-weight:600}
+    .section{
+      display:grid;grid-template-columns:160px minmax(0,1fr);gap:32px;
+      padding:28px 0 36px;position:relative;
+    }
+    .section::before{
+      content:"";position:absolute;left:0;top:-1px;width:100%;height:1px;background:var(--rule);
+      transform-origin:left center;transform:scaleX(0);transition:transform .9s cubic-bezier(.22,.61,.36,1);
+    }
+    .section.is-visible::before{transform:scaleX(1)}
+    .section-label{font-size:12px;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;transition:opacity .35s ease}
+    .section:hover .section-label{opacity:.5}
+    .section-label .num{display:block;margin-bottom:10px;letter-spacing:0}
+    .section-content{max-width:880px}
+    .section-content.big{font-size:clamp(30px,4.1vw,54px);line-height:1.08;letter-spacing:-.045em}
+    .section-content p{margin:0}
+    .lead{font-size:clamp(29px,4vw,50px);line-height:1.08;letter-spacing:-.045em;max-width:900px}
+    .body-copy{max-width:760px;margin-top:22px!important;font-size:18px;line-height:1.45;color:#d0d0d0;letter-spacing:-.015em}
+    .link-stack a{display:block;width:max-content;max-width:100%;font-size:clamp(31px,4.3vw,56px);line-height:1.08;letter-spacing:-.045em;margin:.08em 0}
+    .examples{display:grid;gap:22px}
+    .example a{font-size:clamp(24px,3vw,39px);line-height:1.06;letter-spacing:-.04em}
+    .example small{display:block;margin-top:5px;font-size:14px;color:#c5c5c5}
+    .principles{font-size:clamp(27px,3.4vw,44px);line-height:1.2;letter-spacing:-.035em}
+    .about{display:grid;grid-template-columns:170px minmax(0,1fr);gap:38px;align-items:start}
+    .portrait{width:170px;aspect-ratio:1/1.08;object-fit:cover;filter:grayscale(1);background:#171717;display:block}
+    .about h2{font-size:30px;line-height:1;letter-spacing:-.04em;margin:0 0 12px;font-weight:500}
+    .about p{max-width:650px;font-size:18px;line-height:1.45;margin:0 0 12px}
+    .cta{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.7fr);gap:48px;align-items:end}
+    .cta h2{margin:0;font-size:clamp(54px,7.5vw,100px);line-height:.9;letter-spacing:-.06em;font-weight:500;max-width:760px}
+    .cta-copy{max-width:320px;justify-self:end;padding-bottom:8px}
+    .cta-copy p{margin:0 0 22px;font-size:18px;line-height:1.4}
+    .shift-feature{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(240px,.7fr);gap:52px;align-items:end}
+    .shift-kicker{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#bdbdbd;margin:0 0 16px!important}
+    .shift-feature h2{font-size:clamp(42px,6vw,78px);line-height:.94;letter-spacing:-.055em;font-weight:500;margin:0 0 20px}
+    .shift-feature .dek{font-size:20px;line-height:1.4;color:#d0d0d0;max-width:680px;margin:0 0 22px!important}
+    .shift-feature .shift-side{border-left:1px solid var(--rule);padding-left:24px}
+    .shift-feature .shift-side p{font-size:15px;line-height:1.45;color:#bdbdbd;margin:0 0 16px}
+    footer{display:flex;justify-content:space-between;gap:28px;align-items:end;border-top:1px solid var(--rule);padding:26px 0 40px;margin-top:10px}
+    footer .tag{font-size:13px;line-height:1.35;color:#b8b8b8;text-align:right}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes heroDrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1);will-change:opacity,transform}
+    .reveal.is-visible{opacity:1;transform:translateY(0)}
+    header{animation:fadeIn .7s ease-out both}
+    .hero h1{animation:fadeUp .95s cubic-bezier(.22,.61,.36,1) .08s both}
+    .hero-aside{animation:fadeUp .85s cubic-bezier(.22,.61,.36,1) .28s both}
+    .hero h1 .under::after,.link-stack a::after,.example a::after,.hero-aside a::after,.cta-copy a::after,.about a::after,.shift-feature a::after{
+      content:"";position:absolute;left:0;bottom:-.04em;width:100%;height:1px;background:currentColor;
+      transform-origin:left center;transform:scaleX(1);transition:transform .35s cubic-bezier(.22,.61,.36,1)
+    }
+    .hero h1 .under::after{animation:lineGrow .9s cubic-bezier(.22,.61,.36,1) .45s both;height:2px}
+    .link-stack a,.example a,.hero-aside a,.cta-copy a,.about a,.shift-feature a{position:relative;text-decoration:none;transition:transform .28s ease,opacity .28s ease}
+    .link-stack a:hover,.example a:hover{transform:translateX(8px)}
+    .hero-aside a:hover,.cta-copy a:hover,.about a:hover,.shift-feature a:hover{opacity:.65}
+    .link-stack a:hover::after,.example a:hover::after,.hero-aside a:hover::after,.cta-copy a:hover::after,.about a:hover::after,.shift-feature a:hover::after{transform:scaleX(.28)}
+    .principles p,.section-content.big p{transition:transform .25s ease,opacity .25s ease}
+    .principles p:hover,.section-content.big p:hover{transform:translateX(6px)}
+    .hero::after{content:"";position:absolute;right:2%;top:16%;width:220px;height:220px;border:1px solid rgba(255,255,255,.06);border-radius:50%;pointer-events:none;animation:heroDrift 7s ease-in-out infinite}
+
+    @media(max-width:800px){
+      :root{--pad:20px}
+      header{align-items:flex-start;flex-direction:column}
+      nav{gap:16px}
+      .hero,.cta,.shift-feature{grid-template-columns:1fr;gap:28px;min-height:0}
+      .hero-aside,.cta-copy{justify-self:start}
+      .section{grid-template-columns:1fr;gap:18px}
+      .section-label{display:flex;gap:10px;align-items:baseline}
+      .section-label .num{margin:0}
+      .about{grid-template-columns:120px 1fr;gap:22px}
+      .portrait{width:120px}
+      .hero::after{display:none}
+      .shift-feature .shift-side{border-left:0;border-top:1px solid var(--rule);padding:20px 0 0}
+    }
+    @media(max-width:560px){
+      .hero{padding-top:36px}.about{grid-template-columns:1fr}.portrait{width:130px}
+      footer{align-items:flex-start;flex-direction:column}footer .tag{text-align:left}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+      .reveal{opacity:1!important;transform:none!important}
+    }
+  
+    .brand-logo{display:block;width:190px;max-width:42vw;height:auto}
+    footer .brand-logo{width:190px}
+
+</style>
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="REFRAMƎ home">REFRAMƎ</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#problems">Problems</a>
-      <a href="#proof">Proof</a>
+<div class="page">
+  <header>
+    <a class="logo" href="#top" aria-label="Provocateur home"><img class="brand-logo" src="assets/provocateur-logo-wht.svg" alt="Provocateur"></a>
+    <nav aria-label="Primary">
+      <a href="#why">Why</a>
+      <a href="#when">When</a>
+      <a href="#what">What</a>
+      <a href="#examples">Examples</a>
+      <a href="shifts.html">Shifts</a>
       <a href="#about">About</a>
-      <a class="nav-cta" href="#contact">Let's Talk</a>
+      <a href="#talk">Let’s talk</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero section" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow reveal">SEE THE PROBLEM DIFFERENTLY.</p>
-        <h1 class="display reveal">Change what<br>becomes possible.</h1>
-        <p class="hero-sub reveal">I help leaders and teams make sense of complicated, ambiguous problems—especially
-          when the answer isn't obvious yet.</p>
-        <a class="primary-cta reveal" href="#problems">GOT SOMETHING COMPLICATED? <span>→</span></a>
-      </div>
-      <div class="hero-portrait reveal image-reveal">
-        <img src="assets/david-portrait.jpg" alt="Portrait of David Shaw">
+  <main id="top">
+    <section class="hero" id="why">
+      <h1>Challenge<br>what’s <span class="under">assumed.</span><br>Make what’s<br><span class="under">possible.</span></h1>
+      <div class="hero-aside">
+        <p>I help people see things differently, think together and create what’s next.</p>
+        <a href="#talk">Bring me a challenge →</a>
       </div>
     </section>
 
-    <section class="section section-rule" id="problems">
-      <p class="section-label reveal">DOES THIS SOUND FAMILIAR?</p>
-      <div class="problem-grid">
-        <article class="problem reveal">
-          <div class="problem-number">01</div>
-          <h2>We might be solving the wrong problem.</h2>
-          <p>We have momentum and ideas, but something underneath hasn't been examined.</p>
-          <div class="problem-answer">I help uncover the problem actually worth solving.</div>
-        </article>
-        <article class="problem reveal">
-          <div class="problem-number">02</div>
-          <h2>We have too much information.</h2>
-          <p>Research, data, opinions and decks everywhere—but no clear sense of what matters.</p>
-          <div class="problem-answer">I find the signal in the noise and turn it into implications.</div>
-        </article>
-        <article class="problem reveal">
-          <div class="problem-number">03</div>
-          <h2>We can't make this understandable.</h2>
-          <p>The idea makes sense in our heads, but it isn't landing across the organization.</p>
-          <div class="problem-answer">I turn complicated thinking into something people can act on.</div>
-        </article>
-        <article class="problem reveal">
-          <div class="problem-number">04</div>
-          <h2>We're stuck.</h2>
-          <p>The same conversations keep happening. Different perspectives. No forward motion.</p>
-          <div class="problem-answer">Sometimes the fastest way forward is to change the frame.</div>
-        </article>
+    <section class="section reveal" id="when">
+      <div class="section-label"><span class="num">01</span><span>When to<br>bring me in</span></div>
+      <div class="section-content big">
+        <p>You’re stuck.</p><p>Something needs to change.</p><p>Your team needs to figure it out together.</p>
+        <p>You have an idea, but it’s still just an idea.</p><p>Everyone is solving the problem they’ve been given.</p>
       </div>
     </section>
 
-    <!-- UPDATED CASE STUDY / PROOF SECTION -->
-    <section class="section section-rule" id="proof">
-      <p class="section-label reveal">EXAMPLES OF THE WORK</p>
-
-      <div class="case-grid">
-        <article class="case-card reveal">
-          <div class="case-art case-art-a" aria-hidden="true"></div>
-          <p class="case-kicker">INTEL DIGITAL HEALTH</p>
-          <h2>Redesigning the process, not just the product.</h2>
-          <p class="case-sub">
-            A previous digital-health project exposed the deeper problem: human understanding was entering product
-            development too late.
-          </p>
-          <p class="case-reframe"><strong>REFRAMƎ:</strong> From improving screens → to redesigning the
-            product-development process around human needs.</p>
-          <button class="case-link" type="button" data-open-modal="modal-health">SEE THE REFRAME <span>→</span></button>
-        </article>
-
-        <article class="case-card reveal">
-          <div class="case-art case-art-b" aria-hidden="true"></div>
-          <p class="case-kicker">INTEL EMPLOYEE EXPERIENCE</p>
-          <h2>Listening at the speed of experience.</h2>
-          <p class="case-sub">
-            Traditional surveys could tell us what had happened. The opportunity was to understand what employees were
-            experiencing while there was still time to respond.
-          </p>
-          <p class="case-reframe"><strong>REFRAMƎ:</strong> From periodically measuring sentiment → to continuously
-            sensing employee experience.</p>
-          <button class="case-link" type="button" data-open-modal="modal-sensing">SEE THE REFRAME
-            <span>→</span></button>
-        </article>
-
-        <article class="case-card reveal">
-          <div class="case-art case-art-c" aria-hidden="true"></div>
-          <p class="case-kicker">FORMFACTOR</p>
-          <h2>Designing the employee experience before the workplace existed.</h2>
-          <p class="case-sub">
-            A new manufacturing facility created a chance to shape more than programs. It created a chance to define
-            what becoming part of the organization should feel like.
-          </p>
-          <p class="case-reframe"><strong>REFRAMƎ:</strong> From designing individual programs → to designing an
-            interconnected employee experience.</p>
-          <button class="case-link" type="button" data-open-modal="modal-formfactor">SEE THE REFRAME
-            <span>→</span></button>
-        </article>
+    <section class="section reveal" id="what">
+      <div class="section-label"><span class="num">02</span><span>What I<br>actually do</span></div>
+      <div class="section-content">
+        <p class="lead">I create the conditions for people to see differently, think together and make something possible that wasn’t before.</p>
+        <p class="body-copy">That might mean research, reframing, facilitation, design, prototyping, strategic thinking or helping an idea take shape. The form changes. The movement doesn’t.</p>
       </div>
     </section>
 
-    <section class="about section section-rule" id="about">
-      <div class="about-image reveal ">
-        <img src="assets/me-whiteboard.jpg" alt="David Shaw">
+    <section class="section reveal">
+      <div class="section-label"><span class="num">03</span><span>What that<br>can look like</span></div>
+      <div class="section-content link-stack">
+        <a href="#talk">Reframe a challenge.</a><a href="#talk">Design a pivotal conversation.</a>
+        <a href="#talk">Make sense of complexity.</a><a href="#talk">Imagine what’s next.</a><a href="#talk">Make an idea real.</a>
       </div>
-      <div class="about-copy">
-        <p class="section-label reveal">ABOUT DAVID SHAW</p>
+    </section>
 
-        <h2 class="about-headline">
-          <span class="reveal">I connect the dots.</span>
-          <span class="reveal">I find the frame.</span>
-          <span class="reveal">I help people move.</span>
-        </h2>
+    <section class="section reveal" id="examples">
+      <div class="section-label"><span class="num">04</span><span>Some things<br>I’ve provoked</span></div>
+      <div class="section-content examples">
+        <div class="example"><a href="case-study-arlington.html">Redesign the process, not just the product.</a><small>Intel Digital Health / Arlington</small></div>
+        <div class="example"><a href="case-study-intel-ex.html">From surveying sentiment to sensing experience.</a><small>Intel Employee Experience</small></div>
+        <div class="example"><a href="case-study-formfactor.html">Design the experience before designing the programs.</a><small>FormFactor</small></div>
+        <div class="example"><a href="case-study-6453.html">From alumni network to Life After the Swoosh.</a><small>6453</small></div>
+        <div class="example"><a href="case-study-thrustmaster.html">Turn the controller into the experience.</a><small>ThrustMaster</small></div>
+        <div class="example"><a href="case-study-incar.html">Treat the cabin as a canvas.</a><small>In-car experience concept</small></div>
+        <div style="margin-top:10px"><a href="examples.html" style="font-size:16px;letter-spacing:0">Explore all examples →</a></div>
+      </div>
+    </section>
 
-        <div class="about-body reveal">
-          <p>
-            I'm David Shaw—a creative strategist, reframer, and facilitator who works at
-            the intersection of people, ideas, technology, experience, and humor.
-          </p>
-
-          <p>
-            For more than two decades, I've helped organizations navigate ambiguity:
-            uncovering what's really going on, finding the more useful way to see it,
-            and turning that understanding into something people can act on.
-          </p>
-
-          <p>
-            My path has crossed design, innovation, employee experience, technology,
-            research, storytelling, facilitation, and community building—including
-            work at Nike and Intel.
-          </p>
-
-          <p>
-            That range isn't accidental.
-          </p>
-
-          <p class="about-emphasis">
-            Complex problems rarely stay inside one discipline. Neither do I.
-          </p>
-
-          <p>
-            I'm interested in what happens when you change the frame—sometimes through
-            research and strategy, sometimes through a prototype or a conversation,
-            and occasionally through play or humor.
-          </p>
-
-          <p>
-            Because sometimes the thing that gets people unstuck isn't another answer.
-          </p>
-
-          <p class="about-emphasis">
-            It's seeing the question differently.
-          </p>
+    <section class="section reveal" id="shifts">
+      <div class="section-label"><span class="num">05</span><span>Shifts</span></div>
+      <div class="section-content shift-feature">
+        <div>
+          <p class="shift-kicker">SHIFT 001 / ORIGIN STORY</p>
+          <h2>It Started With a Quarter.</h2>
+          <p class="dek">I thought video games got me interested in computers. Forty-five years later, I realized they taught me something else: how to see what something could become.</p>
+          <a href="shift-001-quarter.html">Read the shift →</a>
+        </div>
+        <div class="shift-side">
+          <p><strong>Things look different from here.</strong></p>
+          <p>Stories, observations and experiments in seeing differently—how problems get reframed, ideas become clearer, and people find a way forward.</p>
+          <a href="shifts.html">Explore all shifts →</a>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-copy reveal">
-        <h2>Got something complicated?</h2>
-        <p>You don't need to know exactly what the problem is. That's often where the work starts.</p>
+    <section class="section reveal">
+      <div class="section-label"><span class="num">06</span><span>How I work</span></div>
+      <div class="section-content principles">
+        <p>Curious before certain.</p><p>Human before process.</p><p>Participatory, not performative.</p>
+        <p>Playful when it helps.</p><p>Always trying to find the better question.</p>
       </div>
-      <a class="contact-button reveal" href="mailto:hello@davidshaw.me?Subject=Can we talk?">LET'S TALK
-        <span>→</span></a>
+    </section>
+
+    <section class="section reveal" id="about">
+      <div class="section-label"><span class="num">07</span><span>A little<br>about me</span></div>
+      <div class="section-content about">
+        <img class="portrait" src="assets/portrait.jpg" alt="David Shaw">
+        <div>
+          <h2>I’m David Shaw.</h2>
+          <p>A strategist, facilitator, designer and lifelong provocateur. I’ve spent 25+ years working where human needs, business, technology, design and organizational complexity collide.</p>
+          <p>Complex problems rarely stay inside one discipline. Neither do I.</p>
+          <a href="#">More about me →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="talk">
+      <div class="section-label"><span class="num">08</span><span>Let’s talk</span></div>
+      <div class="section-content cta">
+        <h2>Bring me<br>the messy thing.</h2>
+        <div class="cta-copy">
+          <p>The thing you’ve been circling. The opportunity you can feel but can’t quite see. The question everyone thinks has already been answered.</p>
+          <a href="mailto:hello@davidshaw.me">Let’s provoke something →</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <span class="brand footer-brand">REFRAMƎ</span>
-    <span>Independent reframing + sensemaking practice</span>
+  <footer>
+    <a class="logo" href="#top" aria-label="Provocateur home"><img class="brand-logo" src="assets/provocateur-logo-wht.svg" alt="Provocateur"></a>
+    <div class="tag">Challenge what’s assumed.<br>Make what’s possible.</div>
   </footer>
-
-  <!-- UPDATED CASE STUDY MODALS -->
-<div class="modal" id="modal-health" role="dialog" aria-modal="true" aria-labelledby="modal-health-title" hidden>
-  <div class="modal-backdrop" data-close-modal></div>
-  <div class="modal-panel" tabindex="-1">
-    <button class="modal-close" type="button" aria-label="Close case study" data-close-modal>×</button>
-    <div class="modal-grid">
-      <div class="modal-content">
-        <p class="case-kicker">INTEL DIGITAL HEALTH · HUMAN-CENTERED PRODUCT INNOVATION</p>
-        <h2 id="modal-health-title">Redesigning the process, not just the product.</h2>
-        <p class="modal-deck">The interface wasn't the real problem. Human understanding was entering the development process too late to shape the product.</p>
-
-        <div class="modal-section">
-          <h3>THE MESS</h3>
-          <p>A previous digital-health project exposed a structural flaw in the development process. Engineering built. Design reacted. Changes became expensive. Teams thrashed. UX had entered too late to influence major product decisions.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE REFRAME</h3>
-          <p>Instead of asking, “How do we design a better interface?” we asked: <strong>How might we redesign the product-development process so human needs shape the product before engineering decisions become difficult to change?</strong></p>
-        </div>
-
-        <div class="modal-section">
-          <h3>INVESTIGATE</h3>
-          <p>For Arlington, an independent-living platform, the team moved upstream. Extensive ethnographic fieldwork and industry research helped us understand customers, end users and the broader system of people and workflows surrounding the product.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>CREATE + EXPERIMENT</h3>
-          <p>We introduced upfront design, workflow analysis, requirements, ideation, low-fidelity prototyping and formative user testing before major development decisions were locked. Downstream design then translated that learning into user flows, wireframes, interaction models and production interfaces.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>WHAT CHANGED</h3>
-          <p>UX gained greater ownership from product definition through implementation. The approach reduced avoidable rework and kept human needs visible as the product moved into development. At the time of the original case study, Arlington had been deployed at two major Aging Services Providers with 140 units in the field.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE BIGGER LEARNING</h3>
-          <p>Human-centered innovation isn't just a design methodology. The organization has to create the conditions that allow it to work. We weren't merely redesigning the thing. We were redesigning how the organization thought about designing the thing.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE PATTERN</h3>
-          <p>Investigate → Reframe → Create → Experiment → Connect → Translate → Act</p>
-          <p><strong>Methods:</strong> ethnographic research, systems thinking, workflow analysis, prototyping, formative testing, interaction design and cross-functional collaboration.</p>
-        </div>
-      </div>
-
-      <div class="modal-visual visual-health" aria-hidden="true">
-        <div class="visual-label">INTERFACE PROBLEM</div>
-        <div class="visual-arrow">→</div>
-        <div class="visual-label active">PROCESS PROBLEM</div>
-      </div>
-    </div>
-  </div>
 </div>
-
-<div class="modal" id="modal-sensing" role="dialog" aria-modal="true" aria-labelledby="modal-sensing-title" hidden>
-  <div class="modal-backdrop" data-close-modal></div>
-  <div class="modal-panel" tabindex="-1">
-    <button class="modal-close" type="button" aria-label="Close case study" data-close-modal>×</button>
-    <div class="modal-grid">
-      <div class="modal-content">
-        <p class="case-kicker">INTEL EMPLOYEE EXPERIENCE · HUMAN-CENTERED ORGANIZATIONAL INNOVATION</p>
-        <h2 id="modal-sensing-title">Listening at the speed of experience.</h2>
-        <p class="modal-deck">Traditional employee listening could tell the organization what had happened. The opportunity was to understand what was happening while there was still time to respond.</p>
-
-        <div class="modal-section">
-          <h3>THE MESS</h3>
-          <p>Intel already had annual surveys, pulse checks and manager feedback. The problem wasn't a lack of information. It was time. By the time concerns surfaced through periodic channels, small issues could already have grown into larger cultural, engagement or productivity problems.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE REFRAME</h3>
-          <p>The obvious response was to improve surveys or run them more often. Instead, we explored a different possibility: <strong>move from periodically measuring employee sentiment to continuously sensing employee experience.</strong></p>
-        </div>
-
-        <div class="modal-section">
-          <h3>DESIGNING THE MODEL</h3>
-          <p>I developed a strategy connecting rapid sentiment indicators, employee touchpoints, privacy, transparency and trust with a clear path from incoming signals to action. Faster data alone wasn't enough. The organization also needed a way to interpret and respond to what it heard.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>EXPERIMENT</h3>
-          <p>Rather than attempting an enterprise rollout, we piloted the model with targeted groups. The pilot tested ways to capture sentiment quickly, identify emerging trends and route insights toward people who could respond.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>WHAT CHANGED</h3>
-          <p>The pilot enabled earlier identification of emerging patterns than formal surveys and shortened the response cycle from months to days or weeks. More importantly, it demonstrated a different relationship with employee feedback: listen, identify, route, respond and learn.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE BIGGER LEARNING</h3>
-          <p>Speed alone isn't innovation. Real-time listening becomes useful only when the human system around it—trust, interpretation and response—is designed as carefully as the sensing mechanism.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE PATTERN</h3>
-          <p>Investigate → Reframe → Create → Experiment → Learn → Act</p>
-          <p><strong>Methods:</strong> experience strategy, employee listening, systems thinking, technology exploration, framework development and pilot experimentation.</p>
-        </div>
-      </div>
-
-      <div class="modal-visual visual-sensing" aria-hidden="true">
-        <div class="signal-line"></div><div class="signal-line"></div><div class="signal-line active"></div><div class="signal-line"></div><div class="signal-dot"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal-formfactor" role="dialog" aria-modal="true" aria-labelledby="modal-formfactor-title" hidden>
-  <div class="modal-backdrop" data-close-modal></div>
-  <div class="modal-panel" tabindex="-1">
-    <button class="modal-close" type="button" aria-label="Close case study" data-close-modal>×</button>
-    <div class="modal-grid">
-      <div class="modal-content">
-        <p class="case-kicker">FORMFACTOR · HUMAN-CENTERED EXPERIENCE INNOVATION</p>
-        <h2 id="modal-formfactor-title">Designing the employee experience before the workplace existed.</h2>
-        <p class="modal-deck">A new manufacturing facility created an opportunity to do more than launch programs. It created a chance to intentionally shape how people would experience the culture from the moment they joined.</p>
-
-        <div class="modal-section">
-          <h3>THE MESS</h3>
-          <p>A large population of new hires would be forming their understanding of FormFactor at the same time the new site itself was taking shape. The organization needed to support operational reality while carrying forward the cultural strengths it valued.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE QUESTION</h3>
-          <p><strong>How might we intentionally design an employee experience that helps people understand the culture, feel connected to it and experience it consistently from the moment they join?</strong></p>
-        </div>
-
-        <div class="modal-section">
-          <h3>INVESTIGATE</h3>
-          <p>Discovery included stakeholder interviews and workshops, review of existing onboarding and engagement practices, persona development and exploration of cultural strengths worth preserving. The goal was to understand the intersection of employee needs, culture and operational reality.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE REFRAME</h3>
-          <p>The project could have been framed as, “What employee programs should we put in the new facility?” A more useful frame was: <strong>What should it feel like to become part of FormFactor here?</strong></p>
-        </div>
-
-        <div class="modal-section">
-          <h3>DESIGN + TRANSLATE</h3>
-          <p>I helped define an ideal future-state experience across onboarding, belonging, moments that matter, employer brand, celebration, connection and recognition—then translated that vision into functional and experiential requirements for HR, Communications, Operations and Facilities.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>WHAT CHANGED</h3>
-          <p>The work established an actionable roadmap and a shared framework for a connected, culturally aligned employee experience. It created greater clarity across touchpoints and cross-functional ownership around how different parts of the organization contributed to the whole.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE BIGGER LEARNING</h3>
-          <p>A new workplace is not just a physical environment. Every process, message, ritual, space and interaction teaches a new employee something about what the organization values. The work began with programs. The more useful problem was experience.</p>
-        </div>
-
-        <div class="modal-section">
-          <h3>THE PATTERN</h3>
-          <p>Investigate → Reframe → Create → Convene → Translate → Act</p>
-          <p><strong>Methods:</strong> discovery, stakeholder interviews, workshops, personas, experience design, future-state visioning, facilitation and requirements development.</p>
-        </div>
-      </div>
-
-      <div class="modal-visual visual-formfactor" aria-hidden="true">
-        <div class="frame outer"></div><div class="frame middle"></div><div class="frame inner"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <script src="script.js"></script>
+<script>
+(() => {
+  const items=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){items.forEach(el=>el.classList.add('is-visible'));return}
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})
+  },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+  items.forEach(el=>observer.observe(el));
+})();
+</script>
 </body>
-
 </html>
