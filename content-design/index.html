@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="David Shaw — Content Designer, UX Writer, Human-Centered Designer. Complexity into clarity.">
+<title>David Shaw — Content Design</title>
+<style>
+:root{
+  --paper:#f4f2ec;
+  --ink:#0b0b0b;
+  --muted:#77746d;
+  --rule:#c9c6bd;
+  --max:1540px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{width:min(calc(100% - 44px),var(--max));margin:auto}
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(244,242,236,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule)
+}
+nav{
+  min-height:56px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+}
+.logo{font-weight:700;text-decoration:none;letter-spacing:-.03em}
+.navlinks{display:flex;gap:18px}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero{
+  min-height:calc(100vh - 56px);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:28px 0 26px;
+}
+.kicker{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.hero h1{
+  margin:7vh 0 4vh;
+  max-width:1500px;
+  font-size:clamp(4.2rem,12.2vw,12.6rem);
+  line-height:.77;
+  letter-spacing:-.083em;
+  font-weight:800;
+}
+.hero .bottom{
+  display:grid;
+  grid-template-columns:1.5fr .7fr;
+  gap:60px;
+  align-items:end;
+}
+.hero .statement{
+  max-width:950px;
+  font-size:clamp(1.7rem,3.3vw,4.2rem);
+  line-height:.95;
+  letter-spacing:-.055em;
+}
+.hero .aside{
+  max-width:450px;
+  font-size:16px;
+  line-height:1.35;
+  color:var(--muted);
+}
+.hero .aside strong{color:var(--ink)}
+.arrow{font-size:34px;margin-top:24px}
+.section{border-top:1px solid var(--ink)}
+.section-head{
+  padding:15px 0;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.045em;
+}
+.manifesto{padding:9vw 0 11vw}
+.manifesto p{
+  margin:0;
+  max-width:1450px;
+  font-size:clamp(3rem,8vw,9rem);
+  line-height:.86;
+  letter-spacing:-.072em;
+  font-weight:700;
+}
+.manifesto .dim{color:var(--muted)}
+.manifesto .under{
+  text-decoration:underline;
+  text-decoration-thickness:.045em;
+  text-underline-offset:.08em;
+}
+.work-list{border-top:1px solid var(--ink)}
+.project{border-bottom:1px solid var(--ink)}
+.project-button{
+  width:100%;
+  background:transparent;
+  border:0;
+  padding:22px 0 26px;
+  color:inherit;
+  text-align:left;
+  cursor:pointer;
+  display:grid;
+  grid-template-columns:70px 1fr 280px 52px;
+  gap:24px;
+  align-items:start;
+}
+.no{font-size:13px;padding-top:10px}
+.project-title{
+  font-size:clamp(3.2rem,8.5vw,9.5rem);
+  line-height:.78;
+  letter-spacing:-.075em;
+  font-weight:800;
+}
+.project-meta{
+  padding-top:10px;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--muted)
+}
+.symbol{font-size:38px;line-height:1;transition:transform .25s ease}
+.project.open .symbol{transform:rotate(45deg)}
+.project-button:hover .project-title{font-style:italic}
+.project-body{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .4s cubic-bezier(.2,.8,.2,1)
+}
+.project.open .project-body{grid-template-rows:1fr}
+.project-inner{overflow:hidden}
+.project-content{
+  padding:0 0 80px 94px;
+  display:grid;
+  grid-template-columns:minmax(180px,.55fr) 1.8fr;
+  gap:70px;
+}
+.project-side{font-size:14px;line-height:1.45}
+.project-side div{margin-bottom:24px}
+.label{
+  display:block;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  font-size:11px;
+  margin-bottom:6px;
+}
+.story{max-width:1050px}
+.story-block{
+  border-top:1px solid var(--rule);
+  padding:20px 0 34px;
+}
+.story-block:first-child{border-top:0;padding-top:0}
+.story-block p{
+  margin:0;
+  font-size:clamp(1.2rem,2vw,2rem);
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+.story-block .shift{
+  font-size:clamp(2.8rem,6.5vw,7.3rem);
+  line-height:.85;
+  letter-spacing:-.066em;
+  font-weight:800
+}
+.story-block .result{
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.4
+}
+.thoughts{padding:7vw 0 10vw}
+.thought{
+  border-top:1px solid var(--rule);
+  padding:18px 0 48px;
+}
+.thought:first-child{border-top:0}
+.thought small{
+  display:block;
+  margin-bottom:22px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:var(--muted)
+}
+.thought p{
+  margin:0;
+  max-width:1450px;
+  font-size:clamp(3rem,7.5vw,8.5rem);
+  line-height:.86;
+  letter-spacing:-.07em;
+  font-weight:750;
+}
+.thought:nth-child(even) p{margin-left:auto;max-width:1220px}
+.thought em{font-weight:400}
+.about{
+  padding:8vw 0 11vw;
+  display:grid;
+  grid-template-columns:1.5fr .7fr;
+  gap:70px;
+  align-items:start
+}
+.about .lead{
+  font-size:clamp(2.4rem,5.5vw,6.2rem);
+  line-height:.9;
+  letter-spacing:-.06em;
+  font-weight:700;
+  margin:0
+}
+.about .copy{font-size:18px;line-height:1.48;margin:0}
+.about .copy p{margin:0 0 22px}
+.contact{
+  min-height:86vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:28px 0;
+}
+.contact h2{
+  margin:5vh 0;
+  font-size:clamp(4rem,12vw,13rem);
+  line-height:.76;
+  letter-spacing:-.085em;
+}
+.contact h2 a{
+  text-decoration:underline;
+  text-decoration-thickness:.04em;
+  text-underline-offset:.07em;
+}
+.contact-footer{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  font-size:14px
+}
+.contact-footer a{margin-right:16px}
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s ease,transform .7s ease
+}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:800px){
+  .wrap{width:min(calc(100% - 26px),var(--max))}
+  .hero{min-height:88vh}
+  .hero h1{font-size:clamp(4rem,20vw,8rem)}
+  .hero .bottom,.about{grid-template-columns:1fr;gap:34px}
+  .project-button{grid-template-columns:38px 1fr 36px}
+  .project-title{font-size:clamp(3rem,15vw,6rem)}
+  .project-meta{grid-column:2/3}
+  .symbol{grid-column:3;grid-row:1}
+  .project-content{padding:0 0 56px 38px;grid-template-columns:1fr;gap:24px}
+  .manifesto p,.thought p{font-size:clamp(3rem,12vw,6rem)}
+  .navlinks a:nth-child(2){display:none}
+  .contact-footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">david shaw</a>
+      <div class="navlinks">
+        <a href="#work">work</a>
+        <a href="#thinking">thinking</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="kicker">
+      <span>content designer / ux writer</span>
+      <span>portland, oregon</span>
+    </div>
+    <h1>words are part of the interface.</h1>
+    <div class="bottom">
+      <div class="statement">I make complicated things easier to understand.</div>
+      <div class="aside"><strong>David Shaw</strong> is a content designer and human-centered designer working where language, interaction, and complexity meet.</div>
+    </div>
+    <div class="arrow">↓</div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span>what i do</span><span>01</span></div>
+      <div class="manifesto reveal">
+        <p>
+          find the friction.<br>
+          understand the human.<br>
+          <span class="dim">change the frame.</span><br>
+          <span class="under">make the next step obvious.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head"><span>selected work</span><span>02</span></div>
+      <div class="work-list">
+        <article class="project open">
+          <button class="project-button" aria-expanded="true">
+            <span class="no">01</span>
+            <span class="project-title">help should find you.</span>
+            <span class="project-meta">Intel Guided Help<br>enterprise / guidance / ux</span>
+            <span class="symbol">+</span>
+          </button>
+          <div class="project-body">
+            <div class="project-inner">
+              <div class="project-content">
+                <div class="project-side">
+                  <div><span class="label">role</span>human-centered designer<br>content strategist<br>product collaborator</div>
+                  <div><span class="label">problem</span>employees had to leave their work to find help</div>
+                </div>
+                <div class="story">
+                  <div class="story-block">
+                    <span class="label">friction</span>
+                    <p>The information existed. The problem was that people had to stop, search for it, interpret it, and then figure out how it applied to what they were doing.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">shift</span>
+                    <p class="shift">don’t make people find help. bring help to the moment they need it.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">experience</span>
+                    <p>We created real-time, context-sensitive assistance inside the work itself. Content stopped being a destination and became part of the interaction.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">result</span>
+                    <p class="result">Released globally. 79% of surveyed employees expected productivity gains. Finance qualified the solution at nearly $20M NPV.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-button" aria-expanded="false">
+            <span class="no">02</span>
+            <span class="project-title">make unfamiliar feel manageable.</span>
+            <span class="project-meta">Intel Health<br>health / guided interaction / content</span>
+            <span class="symbol">+</span>
+          </button>
+          <div class="project-body">
+            <div class="project-inner">
+              <div class="project-content">
+                <div class="project-side">
+                  <div><span class="label">role</span>experience designer<br>interface/content designer</div>
+                  <div><span class="label">problem</span>remote care put unfamiliar technology into people’s homes</div>
+                </div>
+                <div class="story">
+                  <div class="story-block">
+                    <span class="label">friction</span>
+                    <p>The technology could only work if patients understood what was happening and felt confident moving through each step without technical expertise.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">shift</span>
+                    <p class="shift">it shouldn’t feel like technology training. it should feel like someone calmly showing you what to do next.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">experience</span>
+                    <p>I designed sequential guidance that used language, hierarchy, and interaction together to lower cognitive load and help nontechnical patients move through remote-care tasks.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">result</span>
+                    <p class="result">Used in testing and partner demonstrations as part of Intel’s remote healthcare work.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-button" aria-expanded="false">
+            <span class="no">03</span>
+            <span class="project-title">an employee portal doesn’t have to feel like one.</span>
+            <span class="project-meta">Nike Zero<br>content architecture / interaction / voice</span>
+            <span class="symbol">+</span>
+          </button>
+          <div class="project-body">
+            <div class="project-inner">
+              <div class="project-content">
+                <div class="project-side">
+                  <div><span class="label">role</span>concept designer<br>front-end designer/developer<br>content owner</div>
+                  <div><span class="label">problem</span>internal information felt static and disconnected from the brand</div>
+                </div>
+                <div class="story">
+                  <div class="story-block">
+                    <span class="label">friction</span>
+                    <p>Traditional portal conventions made useful employee information feel fragmented, static, and surprisingly unlike Nike.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">shift</span>
+                    <p class="shift">what if the employee experience felt like the company people had joined?</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">experience</span>
+                    <p>I helped create a dynamic, tab-based experience where content, interaction, personality, and technology lived together—with playful moments that made a utilitarian system feel human.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">result</span>
+                    <p class="result">Well received internally and still remembered by Nike alumni years later.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <button class="project-button" aria-expanded="false">
+            <span class="no">04</span>
+            <span class="project-title">data isn’t insight.</span>
+            <span class="project-meta">Health metric study<br>current content-design exercise</span>
+            <span class="symbol">+</span>
+          </button>
+          <div class="project-body">
+            <div class="project-inner">
+              <div class="project-content">
+                <div class="project-side">
+                  <div><span class="label">type</span>self-directed content design study</div>
+                  <div><span class="label">status</span>in development</div>
+                </div>
+                <div class="story">
+                  <div class="story-block">
+                    <span class="label">friction</span>
+                    <p>A health product can show someone a number and still leave them with four questions: Is this good? Why did it change? Should I worry? What do I do now?</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">shift</span>
+                    <p class="shift">the job isn’t to display the metric. the job is to make the metric mean something.</p>
+                  </div>
+                  <div class="story-block">
+                    <span class="label">approach</span>
+                    <p>Start with the question in the user’s head. Explain the signal in plain language. Add context. Separate meaningful change from noise. End with a useful next action without pretending the data knows more than it does.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="thinking">
+    <div class="wrap">
+      <div class="section-head"><span>how i think</span><span>03</span></div>
+      <div class="thoughts reveal">
+        <div class="thought">
+          <small>provocation 01</small>
+          <p>if users keep making the same mistake, <em>maybe they’re not the problem.</em></p>
+        </div>
+        <div class="thought">
+          <small>provocation 02</small>
+          <p>the best interface might be <em>an explanation.</em></p>
+        </div>
+        <div class="thought">
+          <small>provocation 03</small>
+          <p>we called understanding humans a “soft skill.” <em>have you met humans?</em></p>
+        </div>
+        <div class="thought">
+          <small>provocation 04</small>
+          <p>the light-bulb moment <em>is the deliverable.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head"><span>about</span><span>04</span></div>
+      <div class="about reveal">
+        <p class="lead">different titles.<br>same instinct.</p>
+        <div class="copy">
+          <p>My career has moved through technical writing, interface design, front-end development, human-centered design, employee experience, innovation, facilitation, and storytelling.</p>
+          <p>I keep coming back to the same question: <strong>what does this person need to understand differently so they can move forward?</strong></p>
+          <p>I’m especially interested in health, AI, enterprise technology, employee tools, and other complicated products where clarity isn’t decoration. It’s part of whether the product works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap contact">
+      <div class="section-head"><span>contact</span><span>05</span></div>
+      <h2>got something complicated?</h2>
+      <h2><a href="mailto:hello@davidshaw.me">let’s make it clear.</a></h2>
+      <div class="contact-footer">
+        <span>David Shaw — Portland, Oregon</span>
+        <span><a href="https://davidshaw.me" target="_blank">davidshaw.me</a><a href="#">linkedin</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+document.querySelectorAll('.project-button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.closest('.project');
+    const open=item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true':'false');
+  });
+});
+
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
